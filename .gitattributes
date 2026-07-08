@@ -1,0 +1,5 @@
+# Freeze byte content so the SHA-256 checksums in CHECKSUMS.sha256 verify
+# identically on every platform. Treat all files as binary: git performs no
+# CRLF<->LF conversion on checkout or commit, so a clone reproduces the exact
+# bytes that were hashed.
+* -text

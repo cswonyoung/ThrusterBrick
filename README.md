@@ -9,6 +9,10 @@ related or neighbouring rights to every file in this set and dedicated them to
 the public domain worldwide. You may copy, modify, build on, and redistribute
 them, including commercially, without permission. **No warranty** — see `LICENSE`.
 
+## Cite / DOI
+Archived on Zenodo: **10.5281/zenodo.21224278** —
+<https://doi.org/10.5281/zenodo.21224278>
+
 ## What's here
 - `docs/` — the 18 source documents. Each one carries the CC0 dedication and the
   author's name inline (a banner in the HTML/Markdown files; a comment header in

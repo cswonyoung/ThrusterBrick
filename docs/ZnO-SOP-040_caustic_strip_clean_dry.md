@@ -12,7 +12,7 @@
 
 | Field | Value | Field | Value |
 |---|---|---|---|
-| Document no. | ZnO-SOP-040 | Revision | 1.0 |
+| Document no. | ZnO-SOP-040 | Revision | 1.1 |
 | Effective date | ____________ | Supersedes | — |
 | Author | Croft Swonyoung | Approved by | ____________ |
 | Predecessor step | ZnO-SOP-030 (electroless Ni-P) | Next step | ZnO-SOP-050 (Phase-1 bond & rim trim) |
@@ -35,7 +35,7 @@ This procedure dissolves the zinc foil and the ZnO nanotip template out from und
 
 - **Reactions.** Zn + 2 NaOH + 2 H₂O → Na₂[Zn(OH)₄] + **H₂↑**; ZnO + 2 NaOH + H₂O → Na₂[Zn(OH)₄]. The zinc reaction evolves hydrogen (see §3); the ZnO reaction does not.
 - **Geometry.** The carrier holds the smooth outer nickel face. NaOH attacks from the exposed Zn reverse: it removes the foil, then reaches and dissolves the ZnO tips from behind, clearing them out of the nickel cavities. The face that was against the foil becomes the exposed working surface.
-- **The slow step is not the foil.** A 70 µm zinc foil dissolves in minutes; **clearing ZnO out of the blind, narrowing nanovoids is diffusion-limited** and is what sets the strip time. Endpoint is complete ZnO removal, not a bare-looking part.
+- **The slow step is not the foil.** Even in this deliberately dilute bath a 70 µm zinc foil dissolves in tens of minutes; **clearing ZnO out of the blind, narrowing nanovoids is diffusion-limited** and is what sets the strip time. Endpoint is complete ZnO removal, not a bare-looking part.
 - **Residuals.** APTES leaves with the ZnO. Silver seeds are noble and are **not** dissolved by NaOH, so expect residual Ag on the interior cavity walls — acceptable unless later steps say otherwise. Any residual zincate or NaOH left inside a cavity is a contaminant that will be sealed into the N₂ cavity later, so rinsing must reach into the voids.
 - **Aluminium is forbidden in this bath.** Aluminium is amphoteric and dissolves in NaOH (2 Al + 2 NaOH + 6 H₂O → 2 Na[Al(OH)₄] + 3 H₂). The aluminium plate is bonded only **after** this step; it never sees caustic.
 
@@ -79,12 +79,12 @@ Consult the SDS for each reagent before starting. Key hazards:
 
 | Parameter | Specification | Notes / tolerance |
 |---|---|---|
-| NaOH concentration | 2–4 M (~80–160 g/L) | start at 2 M; higher = faster but harder on Ni-P |
-| Temperature | 40–55 °C | start ~45 °C; warm aids ZnO clearing from voids |
+| NaOH concentration | 0.2–0.4 M (~8–16 g/L) | start at 0.2 M — deliberately dilute; ~10× slower strip than a 2 M bath (roughly first-order in OH⁻) but gentler on the Ni-P |
+| Temperature | 40–55 °C | start ~45 °C; warm aids ZnO clearing from voids. Held constant so the slow-down comes from concentration alone |
 | Agitation | continuous, mild–moderate | feeds fresh solution into voids; sweeps H₂ bubbles |
 | Carrier | caustic-proof, perimeter clamp | holds outer Ni face; exposes Zn reverse |
 | Endpoint | complete ZnO removal (voids clear) | qualify by SEM/EDS — **not** just foil gone |
-| Time | qualify on first runs | foil in minutes; void clearing is the long pole (tens of min → ~1 hr+) |
+| Time | qualify on first runs | foil in tens of min; void clearing is the long pole (~10 hr+ at 0.2 M) |
 
 > **Qualify Ni-P resistance.** Confirm on witness coupons that the high-P Ni-P survives the chosen concentration/temperature/time without thinning or pinholing. Use the mildest conditions that still fully clear the voids; do not over-etch.
 
@@ -94,7 +94,8 @@ Consult the SDS for each reagent before starting. Key hazards:
 |---|---|---|
 | Method | copious flowing DI, cascade/multiple exchanges | flush zincate + NaOH out of the blind voids |
 | Agitation | mild; optional brief low-power ultrasonic | ultrasonic with caution — can dislodge the foil/features |
-| Endpoint | effluent neutral (pH ~7), Zn-free | verify before drying |
+| Extended soak | ~10 h static DI immersion after the cascade rinses | lets residual zincate/NaOH diffuse out of the blind void apexes that flowing rinse can't reach; refresh DI at least once, then re-verify effluent |
+| Endpoint | effluent neutral (pH ~7), Zn-free | verify after the soak, before drying |
 | Optional | very dilute mild-acid neutralising rinse | brief; then DI again; use with caution on Ni-P |
 
 ### 5.3 Dry
@@ -118,7 +119,7 @@ Consult the SDS for each reagent before starting. Key hazards:
 
 ### 6.2 Caustic strip
 
-1. Bring the NaOH bath to temperature (start ~45 °C, 2 M) and confirm.
+1. Bring the NaOH bath to temperature (start ~45 °C, 0.2 M) and confirm.
 2. Immerse the carried coupon, Zn face to the solution. Expect immediate H₂ evolution as the foil dissolves.
 3. Hold with continuous mild-to-moderate agitation. Once the foil is gone, continue to drive complete ZnO removal from the voids — this is the rate-limiting phase; exchange or refresh solution as needed.
 4. Pull a witness coupon (or inspect) to confirm the voids are fully cleared of ZnO before stopping. Record time and conditions.
@@ -127,8 +128,9 @@ Consult the SDS for each reagent before starting. Key hazards:
 ### 6.3 Rinse / neutralisation
 
 1. Transfer immediately to flowing DI; run several cascade exchanges with agitation to flush zincate and NaOH out of the voids.
-2. (Optional) brief very-dilute mild-acid rinse to neutralise residual caustic, then DI again — use cautiously.
-3. Verify the rinse effluent is neutral (pH ~7) and Zn-free before proceeding. Do not let the part dry with rinse liquid still in the voids.
+2. Then hold the part in a static DI soak for ~10 h to let residual zincate/NaOH diffuse out of the blind void apexes that flowing rinse cannot reach. Refresh the DI at least once during the soak.
+3. (Optional) brief very-dilute mild-acid rinse to neutralise residual caustic, then DI again — use cautiously.
+4. Verify the rinse effluent is neutral (pH ~7) and Zn-free before proceeding. Do not let the part dry with rinse liquid still in the voids.
 
 ### 6.4 Dry
 
@@ -191,4 +193,5 @@ Consult the SDS for each reagent before starting. Key hazards:
 | Rev | Date | Author | Change summary |
 |---|---|---|---|
 | 1.0 | __________ | ____________ | Initial release — selective NaOH strip of Zn/ZnO, carrier-supported, with void-safe clean/dry. |
+| 1.1 | __________ | Croft Swonyoung | Dropped strip bath to 0.2 M NaOH (~10× slower, gentler on Ni-P), temperature held; added a ~10 h static DI soak to the rinse to diffuse residuals out of the blind voids. |
 |  |  |  |  |
