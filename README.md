@@ -44,3 +44,21 @@ do not, by themselves, establish what net energy or other output the finished
 article produces. Anyone reproducing the work should measure inputs and outputs
 directly, with controls. Open publication under CC0 is what makes that
 independent verification possible.
+
+## Background & attribution
+The tapered-nanocavity geometry in this process is motivated by:
+
+> M. E. McCulloch, "Can Nano-Materials Push Off the Vacuum?",
+> *Progress in Physics*, **16** (2), 92–93 (2020).
+
+which argues — from the theory of *quantised inertia* (QI) — that arrays of
+asymmetric sub-~129 nm cavities could experience a net force from the quantum
+vacuum. Quantised inertia is a non-mainstream theory and the predicted effect is
+unverified; this set documents only the *fabrication* of such a structure.
+Whether a finished stack produces any net force is an open question to be settled
+by direct measurement (see the scope note above). Credit for the underlying idea
+is McCulloch's; responsibility for reducing it to a build process — and for any
+errors in doing so — is the author's.
+
+Documentation for this release was prepared with assistance from Claude
+(Anthropic), reflected in the git commit history.
