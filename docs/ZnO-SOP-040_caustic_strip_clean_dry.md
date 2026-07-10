@@ -12,22 +12,22 @@
 
 | Field | Value | Field | Value |
 |---|---|---|---|
-| Document no. | ZnO-SOP-040 | Revision | 1.1 |
-| Effective date | ____________ | Supersedes | — |
+| Document no. | ZnO-SOP-040 | Revision | 1.3 |
+| Effective date | ____________ | Supersedes | Rev 1.2 |
 | Author | Croft Swonyoung | Approved by | ____________ |
-| Predecessor step | ZnO-SOP-030 (electroless Ni-P) | Next step | ZnO-SOP-050 (Phase-1 bond & rim trim) |
+| Predecessor step | ZnO-SOP-030 (electroless Ni-P) | Next step | ZnO-SOP-050 (Phase-1 wafer bond & rim trim) |
 
 ---
 
 ## 1. Purpose and scope
 
-This procedure dissolves the zinc foil and the ZnO nanotip template out from under the electroless Ni-P coating using sodium hydroxide, freeing a self-supporting nickel foil that carries the former tips as open, tapered nanovoids. It then rinses and dries those nanovoids so the working surface is clean, residue-free, and ready for edge trimming and bonding to the aluminium plate.
+This procedure dissolves the zinc foil and the ZnO nanotip template out from under the electroless Ni-P coating using sodium hydroxide, freeing a self-supporting nickel foil that carries the former tips as open, tapered nanovoids. It then rinses and dries those nanovoids so the working surface is clean, residue-free, and ready for edge trimming and bonding to the silicon wafer backer.
 
 **Selectivity is the whole idea:** NaOH dissolves Zn and ZnO (both amphoteric) and largely spares the high-P Ni-P.
 
-**Substrate at entry:** a 25 µm Ni-P coating (from ZnO-SOP-030) still backed by its ZnO tips and Zn foil, held in a temporary caustic-proof carrier that supports the plated (outer) nickel face and exposes the bare Zn reverse face to the bath.
+**Substrate at entry:** a 25 µm Ni-P coating (from ZnO-SOP-030) still backed by its ZnO tips and **0.15 mm Zn foil**, held in a temporary caustic-proof carrier that supports the plated (outer) nickel face and exposes the bare Zn reverse face to the bath.
 
-**Output:** a clean, dry, free-standing (carrier-supported) 25 µm Ni-P foil with open void relief on the working face, held under N₂, ready for trim and bonding.
+**Output:** a free-standing (carrier-supported) 25 µm Ni-P foil, **bulk-caustic-free and bond-face-clean, gently dried** for handoff to bonding. The **final deep-void clean and capillary-safe dry are deferred to ZnO-SOP-050**, after its chemical de-rim re-wets the voids — so the extreme rinse-soak and any critical-point drying happen once, at the end, not twice. The strip endpoint (ZnO fully cleared from the voids) is still met and verified here.
 
 ---
 
@@ -35,9 +35,10 @@ This procedure dissolves the zinc foil and the ZnO nanotip template out from und
 
 - **Reactions.** Zn + 2 NaOH + 2 H₂O → Na₂[Zn(OH)₄] + **H₂↑**; ZnO + 2 NaOH + H₂O → Na₂[Zn(OH)₄]. The zinc reaction evolves hydrogen (see §3); the ZnO reaction does not.
 - **Geometry.** The carrier holds the smooth outer nickel face. NaOH attacks from the exposed Zn reverse: it removes the foil, then reaches and dissolves the ZnO tips from behind, clearing them out of the nickel cavities. The face that was against the foil becomes the exposed working surface.
-- **The slow step is not the foil.** Even in this deliberately dilute bath a 70 µm zinc foil dissolves in tens of minutes; **clearing ZnO out of the blind, narrowing nanovoids is diffusion-limited** and is what sets the strip time. Endpoint is complete ZnO removal, not a bare-looking part.
-- **Residuals.** APTES leaves with the ZnO. Silver seeds are noble and are **not** dissolved by NaOH, so expect residual Ag on the interior cavity walls — acceptable unless later steps say otherwise. Any residual zincate or NaOH left inside a cavity is a contaminant that will be sealed into the N₂ cavity later, so rinsing must reach into the voids.
-- **Aluminium is forbidden in this bath.** Aluminium is amphoteric and dissolves in NaOH (2 Al + 2 NaOH + 6 H₂O → 2 Na[Al(OH)₄] + 3 H₂). The aluminium plate is bonded only **after** this step; it never sees caustic.
+- **The slow step is not the foil.** Even in this deliberately dilute bath the **0.15 mm zinc foil** dissolves in roughly an hour; **clearing ZnO out of the blind, narrowing nanovoids is diffusion-limited** and is what sets the strip time. Thickening the zinc lengthens this foil phase but **not** the rate-limiting void-clearing, which is fixed by the void geometry (ZnO-SOP-010), not the backing thickness. Endpoint is complete ZnO removal, not a bare-looking part.
+- **Two-stage clean (Rev 1.3).** This SOP does the *strip* (full ZnO void clearing — unavoidable, verified here) plus a *bulk* clean sufficient to bond: a cascade rinse to neutral that removes all **active caustic** (so no NaOH rides into the bond to attack the silicon wafer), and a gentle baseline dry. The *deep-void* contaminant soak and any capillary-safe / critical-point drying are **deferred to ZnO-SOP-050** — the chemical de-rim there re-wets the voids and even redissolves leftover zincate/NaOH, so doing the extreme clean/dry here too would be wasted effort and extra capillary risk.
+- **Residuals.** APTES leaves with the ZnO. Silver seeds are noble and are **not** dissolved by NaOH, so expect residual Ag on the interior cavity walls — acceptable unless later steps say otherwise. Any residual zincate or NaOH left inside a void is a contaminant that will be sealed into the evacuated stack later (and would outgas into the common vacuum), so rinsing must reach into the voids.
+- **No aluminium or silicon in this bath.** Aluminium is amphoteric and dissolves in NaOH (2 Al + 2 NaOH + 6 H₂O → 2 Na[Al(OH)₄] + 3 H₂); silicon is likewise etched by hot NaOH. The **silicon wafer backer** (ZnO-SOP-050 Rev 4.0) is bonded only **after** this step, so it never sees caustic — the same rule that kept the old aluminium plate out.
 
 ---
 
@@ -45,7 +46,7 @@ This procedure dissolves the zinc foil and the ZnO nanotip template out from und
 
 Consult the SDS for each reagent before starting. Key hazards:
 
-- **Hydrogen evolution.** Dissolving the zinc foil liberates flammable H₂ (~0.2 L per coupon, more in a batch). Work with adequate ventilation, **no ignition sources**, and manage bubble accumulation. Do not strip in a sealed vessel.
+- **Hydrogen evolution.** Dissolving the zinc foil liberates flammable H₂ — now **~0.8 L per coupon** (≈4× the prior estimate: 0.15 mm zinc over the larger ⌀130 active area), and proportionally more in a batch. Work with adequate ventilation, **no ignition sources**, and manage bubble accumulation. Do not strip in a sealed vessel.
 - **Sodium hydroxide.** Severe caustic burns and eye hazard; heated solution is worse. Full splash protection: face shield/goggles, caustic-rated gloves and apron; add NaOH to water, never the reverse.
 - **PPE:** caustic-resistant gloves, goggles + face shield, apron; fume hood or well-ventilated caustic bench.
 - **Solvents (drying).** IPA/ethanol are flammable — keep away from any ignition and from the H₂ source.
@@ -83,8 +84,9 @@ Consult the SDS for each reagent before starting. Key hazards:
 | Temperature | 40–55 °C | start ~45 °C; warm aids ZnO clearing from voids. Held constant so the slow-down comes from concentration alone |
 | Agitation | continuous, mild–moderate | feeds fresh solution into voids; sweeps H₂ bubbles |
 | Carrier | caustic-proof, perimeter clamp | holds outer Ni face; exposes Zn reverse |
+| Bath charge / refresh | size for the zinc load; refresh before OH⁻ depletes | the ⌀130 active area × 0.15 mm zinc is **~4× the old zinc mass** → ~4× zincate + OH⁻ consumption; a too-small dilute charge saturates and stalls the void-clearing tail |
 | Endpoint | complete ZnO removal (voids clear) | qualify by SEM/EDS — **not** just foil gone |
-| Time | qualify on first runs | foil in tens of min; void clearing is the long pole (~10 hr+ at 0.2 M) |
+| Time | qualify on first runs (SEM endpoint) | foil now **~1 hr** (0.15 mm Zn); void clearing is the long pole (**~10–12 hr+** at 0.2 M), set by the void geometry (ZnO-SOP-010), **not** the foil thickness |
 
 > **Qualify Ni-P resistance.** Confirm on witness coupons that the high-P Ni-P survives the chosen concentration/temperature/time without thinning or pinholing. Use the mildest conditions that still fully clear the voids; do not over-etch.
 
@@ -94,18 +96,17 @@ Consult the SDS for each reagent before starting. Key hazards:
 |---|---|---|
 | Method | copious flowing DI, cascade/multiple exchanges | flush zincate + NaOH out of the blind voids |
 | Agitation | mild; optional brief low-power ultrasonic | ultrasonic with caution — can dislodge the foil/features |
-| Extended soak | ~10 h static DI immersion after the cascade rinses | lets residual zincate/NaOH diffuse out of the blind void apexes that flowing rinse can't reach; refresh DI at least once, then re-verify effluent |
-| Endpoint | effluent neutral (pH ~7), Zn-free | verify after the soak, before drying |
-| Optional | very dilute mild-acid neutralising rinse | brief; then DI again; use with caution on Ni-P |
+| Extended soak | **deferred to ZnO-SOP-050** (post-de-rim final clean) | the ~10 h deep-void diffusion soak is done once, after the de-rim re-wets the voids — not here |
+| Endpoint (here) | bulk effluent neutral (pH ~7); no active caustic | removes bulk caustic to protect the Si wafer at bond; deep-void Zn is cleared at the SOP-050 final clean |
 
 ### 5.3 Dry
 
 | Parameter | Specification | Notes |
 |---|---|---|
-| Baseline | solvent exchange DI → IPA, then evaporate under N₂ | IPA lowers surface tension → less capillary stress in voids |
-| Escalation | critical-point (CO₂) or freeze-dry | if SEM shows residue, trapped liquid, or feature damage |
+| Baseline (here) | brief solvent exchange DI → IPA, then evaporate under N₂ | just enough to hand off dry to bonding; IPA lowers capillary stress |
+| Critical-point / freeze | **deferred to ZnO-SOP-050** final dry | the capillary-safe escalation is applied once, after the de-rim, if SEM then shows it |
 | Finish | gentle warm dry under N₂ | avoid oxidation of the fresh nickel void surface |
-| Prerequisite | rinse must be clean **first** | evaporating a dirty rinse leaves salt residue in the voids |
+| Note | some deep-void residual may remain | acceptable here — redissolved and cleared at the SOP-050 de-rim + final clean |
 
 ---
 
@@ -120,28 +121,26 @@ Consult the SDS for each reagent before starting. Key hazards:
 ### 6.2 Caustic strip
 
 1. Bring the NaOH bath to temperature (start ~45 °C, 0.2 M) and confirm.
-2. Immerse the carried coupon, Zn face to the solution. Expect immediate H₂ evolution as the foil dissolves.
-3. Hold with continuous mild-to-moderate agitation. Once the foil is gone, continue to drive complete ZnO removal from the voids — this is the rate-limiting phase; exchange or refresh solution as needed.
+2. Immerse the carried coupon, Zn face to the solution. Expect immediate, vigorous H₂ evolution as the 0.15 mm foil dissolves over ~1 hr (≈4× the H₂ of the old coupon — keep bubbles swept and the bench vented).
+3. Hold with continuous mild-to-moderate agitation. Once the foil is gone, continue to drive complete ZnO removal from the voids — the rate-limiting phase. **Refresh or exchange the dilute bath as the larger zinc load builds zincate**, so OH⁻ depletion does not stall the void-clearing tail.
 4. Pull a witness coupon (or inspect) to confirm the voids are fully cleared of ZnO before stopping. Record time and conditions.
 5. Withdraw promptly at endpoint; minimise over-etch of the Ni-P.
 
 ### 6.3 Rinse / neutralisation
 
-1. Transfer immediately to flowing DI; run several cascade exchanges with agitation to flush zincate and NaOH out of the voids.
-2. Then hold the part in a static DI soak for ~10 h to let residual zincate/NaOH diffuse out of the blind void apexes that flowing rinse cannot reach. Refresh the DI at least once during the soak.
-3. (Optional) brief very-dilute mild-acid rinse to neutralise residual caustic, then DI again — use cautiously.
-4. Verify the rinse effluent is neutral (pH ~7) and Zn-free before proceeding. Do not let the part dry with rinse liquid still in the voids.
+1. Transfer immediately to flowing DI; run several cascade exchanges with agitation to flush the **bulk** zincate and NaOH off the part and out of the open voids.
+2. Verify the (bulk) rinse effluent is neutral (pH ~7) — **all active caustic must be gone** before bonding, so no NaOH rides into the bond to attack the silicon wafer.
+3. **Do not run the ~10 h deep-void soak here** — it is deferred to the ZnO-SOP-050 final clean (after the de-rim re-wets the voids). Some residual zincate deep in the blind apexes may remain; that is expected and cleared later.
 
 ### 6.4 Dry
 
-1. Solvent-exchange the rinse water for IPA (DI → IPA soak/exchange).
-2. Evaporate under N₂; finish with a gentle warm N₂ dry.
-3. If SEM later shows residue, trapped liquid, or deformed features, switch this batch to critical-point (CO₂) or freeze-drying.
+1. Solvent-exchange the rinse water for IPA (DI → IPA soak/exchange) and evaporate under N₂; finish with a gentle warm N₂ dry — just enough to hand off dry.
+2. **Do not escalate to critical-point / freeze-dry here.** The capillary-safe final dry is applied once, at the ZnO-SOP-050 final clean after the de-rim.
 
 ### 6.5 Recovery and hold
 
 1. Keep the foil on its carrier for support; handle only by the carrier/edge.
-2. Move the clean, dry part to N₂ hold to protect the fresh nickel void surface from oxidation until edge trim and Al bonding.
+2. Move the clean, dry part to N₂ hold to protect the fresh nickel void surface from oxidation until edge trim and wafer bonding.
 3. Label with run ID, strip conditions, and drying method.
 
 ---
@@ -159,9 +158,10 @@ Consult the SDS for each reagent before starting. Key hazards:
 
 - **Template fully removed:** SEM shows clean hollow void cavities; EDS shows no residual Zn/O beyond expected residual Ag on cavity walls.
 - **Ni-P intact:** no thinning, pitting, or perforation; 25 µm preserved; foil coherent and not curled.
-- **Voids clean and dry:** no salt residue, no trapped liquid, no capillary-collapsed features (SEM).
-- **Chemistry cleared:** rinse effluent neutral and Zn-free; no caustic residue.
-- **Handling state:** flat, carrier-supported, held under N₂.
+- **Bulk chemistry cleared (here):** bulk rinse effluent neutral; no active caustic that could reach the wafer at bond. (Final deep-void Zn/salt clearance is a ZnO-SOP-050 gate, post-de-rim.)
+- **Bond face:** high-P (bond) face clean and dry, ready for silicone die-attach.
+- **Voids:** ZnO fully cleared (SEM/EDS) — the strip endpoint; final void cleanliness/dryness verified after the SOP-050 de-rim.
+- **Handling state:** flat, carrier-supported, gently dried, held under N₂.
 
 ---
 
@@ -194,4 +194,5 @@ Consult the SDS for each reagent before starting. Key hazards:
 |---|---|---|---|
 | 1.0 | __________ | ____________ | Initial release — selective NaOH strip of Zn/ZnO, carrier-supported, with void-safe clean/dry. |
 | 1.1 | __________ | Croft Swonyoung | Dropped strip bath to 0.2 M NaOH (~10× slower, gentler on Ni-P), temperature held; added a ~10 h static DI soak to the rinse to diffuse residuals out of the blind voids. |
-|  |  |  |  |
+| 1.2 | __________ | Croft Swonyoung | Zinc foil thickened to 0.15 mm and coupon enlarged to the ⌀130 active area (round wafer-scale set): foil-dissolution phase now ~1 hr and H₂/zincate load ~4×, so bath charge/refresh sized up and ventilation raised; clarified that void-clearing (the ~10–12 hr long pole) is set by void geometry, not foil thickness. Backer updated from aluminium plate to silicon wafer (bonded after strip; silicon is also NaOH-attacked, so kept out of the bath). |
+| 1.3 | __________ | Croft Swonyoung | Split the clean/dry into two stages to avoid the extreme void clean twice: this SOP now does the full ZnO strip (verified) + a **bulk cascade rinse to neutral** (protects the Si wafer at bond) + a **gentle baseline dry** for handoff. The **~10 h deep-void diffusion soak and any critical-point/freeze drying are deferred to ZnO-SOP-050**, after its chemical de-rim re-wets the voids; final void-cleanliness/dryness gates moved there. |

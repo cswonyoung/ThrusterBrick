@@ -40,108 +40,112 @@
 <div class="sheet">
   <div class="eyebrow">ZnO Nanovoid Process · Master Document</div>
   <h1>Consolidated Shop Packet</h1>
-  <p class="sub">Routing, document index, hold points, fixtures, cut files, and consolidated purchasing for the full nanovoid-stack line</p>
+  <p class="sub">Routing, document index, hold points, fixtures, cut files, and consolidated purchasing for the full nanovoid-stack line — silicon-wafer / common-vacuum architecture</p>
 
   <div class="ctrl">
     <div class="k">Document no.</div><div class="mono">ZnO-SP-001</div>
-    <div class="k">Revision</div><div class="mono">1.0</div>
-    <div class="k">Product</div><div class="mono">30-cell N₂ nanovoid stack (low-weight)</div>
-    <div class="k">Coupon</div><div class="mono">100 × 125 mm Zn foil, 70 µm</div>
+    <div class="k">Revision</div><div class="mono">2.0</div>
+    <div class="k">Product</div><div class="mono">N-cell common-vacuum wafer stack (N ≤ 117)</div>
+    <div class="k">Coupon</div><div class="mono">⌀156 round Zn blank, 0.15 mm (⌀130 active)</div>
     <div class="k">Author</div><div class="mono">____________</div>
     <div class="k">Approved</div><div class="mono">____________</div>
   </div>
 
+  <div class="rule3 hold"><b>Rev 2.0 — architecture change.</b> This line now builds a <b>silicon-wafer-backed, zero-gap, common-vacuum</b> stack (ZnO-SOP-050 Rev 4.0 / SOP-060 Rev 3.0), replacing the N₂-filled, spacer-gapped, butyl-sealed stack of Rev 1.0. Butyl, aluminium plates/spacers, the two-phase silicone/butyl separation, the PTFE film mask, and the N₂ glovebox close are all <b>retired</b>. Release-pass items (manifest, checksums, README, filename normalization, mirrors) are still pending.</div>
+
   <h2>1 · Governing principles (read first)</h2>
-  <div class="rule3"><b>Two-phase adhesive rule.</b> All silicone bonds are made and cured in Phase 1 with the butyl lands physically masked by the bonding carrier. All butyl joints are made in Phase 2 by compression as each plate lands. Silicone and butyl never coexist wet, and no silicone ever touches a butyl land or an enclosed inner face.</div>
-  <div class="rule3"><b>Butyl-by-compression.</b> Every inner interface is uncured PIB squeezed to contact against the spacer stop — sealed on both faces the instant the plate lands. Closing a cavity and finishing its seal are the same act. The seal is good for decades <i>only while compressed</i>: the outboard structure exists to hold that squeeze permanently.</div>
-  <div class="rule3"><b>One border.</b> The 13 mm border is the strip clamp, then the zinc-rim handling frame, then (after trim) the butyl seal land on clean aluminium. Etch boundary = trim line = seal land. Hold it to ±0.1 mm wherever it is registered.</div>
-  <div class="rule3"><b>Working face discipline.</b> The mid-P void surface is never touched, never pressed, never sees silicone; face-down in wet baths, face-up in dry steps; foil is laid onto wetted plates, never pressed under them.</div>
+  <div class="rule3"><b>Vacuum, not fill.</b> The finished stack shares <b>one common vacuum</b> inside a single hermetic metallized-barrier envelope, held for life by a getter. The seal carries a permanent ~1 atm (~101 kPa) differential, so the hermetic duty lives <i>entirely</i> in the outer envelope — no inner interface is a pressure boundary. Achievable vacuum is rough–medium (~1–100 Pa), not UHV.</div>
+  <div class="rule3"><b>Contact, not glue, at the working face.</b> Each foil's mid-P void face rests <i>directly</i> on the neighbour's polished silicon — mechanical contact only, held in compression by atmospheric pressure through the conformal envelope. No adhesive touches the working face (nothing wicks into the voids; the polished-Si cap geometry is preserved).</div>
+  <div class="rule3"><b>Low-outgassing inside the vacuum.</b> The only adhesive in the build is the <b>low-outgassing (ASTM E595: TML&lt;1.0 % / CVCM&lt;0.1 %)</b> silicone die-attaching the Ni high-P face to the wafer's unpolished back. A <b>general</b> O₂/H₂O + molecular-sieve (±NEG) getter pumps the permeation + outgassing load for the service life. (This inverts the old N₂-sparing getter rule.)</div>
+  <div class="rule3"><b>One border · working-face discipline.</b> The 13 mm border is the strip clamp, then the zinc handling rim, then trimmed off after the wafer bond (there is no butyl seal land now). The mid-P void surface is never touched, never pressed, never sees silicone; face-down in wet baths, face-up in dry steps and die-attach; finally it rests on polished Si under vacuum. Hold the border to ±0.1 mm wherever it is registered.</div>
 
   <h2>2 · Master routing — one coupon, growth to sealed stack</h2>
   <table>
     <tr><th>Op</th><th>Station / document</th><th>What happens</th><th>Fixture</th><th>Gate</th></tr>
-    <tr><td class="mono">10</td><td>SOP-010 · Fume hood A</td><td>Degrease → HCl light etch → 10 mM depletion ZnO growth → rinse/dry</td><td>Immersion carrier (growth)</td><td>SEM: base 70–120 nm, ht &lt;300 nm, taper, dense, vertical</td></tr>
-    <tr><td class="mono">20</td><td>SOP-020 · Glovebox train</td><td>UV-ozone → vapour APTES + cure → AgNO₃ load → DMAB reduce</td><td>Seeding carrier</td><td>Ag dispersion on tips; no cemented Ag on edges</td></tr>
-    <tr><td class="mono">30</td><td>SOP-030 · Fume hood B</td><td>Mid-P strike (65–70 °C, pH 6.5–7) → <span class="gate">HOLD: pinhole-free cover</span> → high-P bulk (85–90 °C, pH 4.5–5) to 25 µm</td><td>Immersion carrier (plating)</td><td>25 µm; P: ~5–8 % / ~10–12 %</td></tr>
-    <tr><td class="mono">40</td><td>SOP-040 · Fume hood C</td><td>NaOH strip (Zn + ZnO out; mid-P faces caustic; high-P backed) → cascade rinse → IPA-exchange dry</td><td>Strip edge-clamp carrier</td><td><span class="gate">HOLD: voids clear (SEM/EDS), not just foil gone</span>; rim intact</td></tr>
-    <tr><td class="mono">50</td><td>SOP-050 · Bonding bench <span class="ph">PHASE 1</span></td><td>Silicone foil→plate bond in masking carrier (lay, don't press) → cure → trim rim</td><td>Vacuum platen + film mask (DR-006)</td><td><span class="gate">GATE: butyl lands silicone-free; no Zn at trim (EDS)</span></td></tr>
-    <tr><td class="mono">60</td><td>SOP-060 · N₂ glovebox <span class="ph">PHASE 2</span></td><td>Bead spacers → plate-by-plate close ×30 (getter + N₂ trapped per landing) → cap → outboard skin from outside</td><td>Registration fixture, PIB applicator</td><td>He leak per cell; RGA witness; compression path confirmed</td></tr>
+    <tr><td class="mono">10</td><td>SOP-010 · Fume hood A</td><td>Degrease → acetic light etch → 10 mM depletion ZnO growth on ⌀156 / 0.15 mm Zn → rinse/dry</td><td>Immersion carrier (growth), round</td><td>SEM: base 70–120 nm, ht &lt;300 nm, taper, dense, vertical</td></tr>
+    <tr><td class="mono">20</td><td>SOP-020 · Glovebox train</td><td>UV-ozone → vapour APTES + cure → AgNO₃ load → ascorbate reduce</td><td>Seeding carrier, round</td><td>Ag dispersion on tips; no cemented Ag on edges</td></tr>
+    <tr><td class="mono">30</td><td>SOP-030 · Fume hood B</td><td>Mid-P strike (65–70 °C, pH 6.5–7) → <span class="gate">HOLD: pinhole-free cover</span> → high-P bulk (85–90 °C, pH 4.5–5) to 25 µm</td><td>Immersion carrier (plating), round</td><td>25 µm; P: ~5–8 % / ~10–12 %</td></tr>
+    <tr><td class="mono">40</td><td>SOP-040 · Fume hood C</td><td>NaOH strip (Zn + ZnO out — void clearing) → <b>bulk</b> rinse to neutral → gentle baseline dry (deep-void clean deferred to op 50)</td><td>Strip edge-clamp carrier, round</td><td><span class="gate">HOLD: voids clear (SEM/EDS)</span>; rim intact; bulk rinse neutral; bath refreshed for ~4× Zn load</td></tr>
+    <tr><td class="mono">50</td><td>SOP-050 · Bonding bench <span class="ph">PHASE 1</span></td><td>Low-outgassing silicone die-attach: foil high-P → wafer rough back (lay, don't press) → near-RT cure → <b>chemical de-rim + single final void clean/dry</b></td><td>Wafer bonding chuck (DR-006)</td><td><span class="gate">GATE: polished face pristine; wafer bow in budget; no Zn after de-rim (EDS); voids finally clean/dry (SEM)</span></td></tr>
+    <tr><td class="mono">60</td><td>SOP-060 · Vacuum-seal bench <span class="ph">PHASE 2</span></td><td>Stack wafer-backed cells zero-gap (working face on next polished wafer) + getter → barrier envelope → evacuate ~1–100 Pa → heat-seal → atmospheric preload</td><td>Registration fixture, chamber vacuum sealer</td><td>Envelope integrity + vacuum-decay baseline; preload confirmed</td></tr>
   </table>
 
   <h2>3 · Hold points &amp; gates (do-not-pass list)</h2>
   <table>
     <tr><th>#</th><th>Where</th><th>Gate</th><th>Why it is absolute</th></tr>
     <tr><td class="mono">G1</td><td>SOP-030 §6.3</td><td>Step-1 strike continuous &amp; pinhole-free before Step 2</td><td>The acidic high-temp bath attacks any exposed ZnO/Zn</td></tr>
-    <tr><td class="mono">G2</td><td>SOP-040 §7</td><td>Endpoint = void clearance (SEM/EDS), not foil loss</td><td>ZnO clears the blind tapered apexes last; residue gets sealed in forever</td></tr>
-    <tr><td class="mono">G3</td><td>SOP-040 §5.2</td><td>Rinse effluent neutral &amp; Zn-free before drying</td><td>Evaporating dirty rinse leaves salt inside the working voids</td></tr>
-    <tr><td class="mono">G4</td><td>SOP-050 §6.4</td><td>Butyl lands verifiably silicone-free at carrier release</td><td>Silicone poisons butyl adhesion irreversibly; this gate is the whole Phase-1/Phase-2 separation</td></tr>
-    <tr><td class="mono">G5</td><td>SOP-050 §6.5</td><td>No detectable Zn in the active part after trim</td><td>Residual Zn = galvanic couple + creep under the seal + outgassing in the cavity</td></tr>
-    <tr><td class="mono">G6</td><td>SOP-060 §6.3</td><td>Never reopen a closed cavity</td><td>Each cavity's fill, getter, and seal are set at its plate landing; there is no inside access afterwards</td></tr>
-    <tr><td class="mono">G7</td><td>SOP-060 §6.4</td><td>Compression path (skin ± clamp) confirmed before release</td><td>Butyl seals only while squeezed; the outboard structure is the seal's life-support</td></tr>
+    <tr><td class="mono">G2</td><td>SOP-040 §7</td><td>Endpoint = void clearance (SEM/EDS), not foil loss</td><td>ZnO clears the blind tapered apexes last; residue gets sealed into the vacuum forever</td></tr>
+    <tr><td class="mono">G3</td><td>SOP-040 §6.3</td><td>Bulk rinse to neutral — no active caustic before bond</td><td>Residual NaOH would etch the silicon wafer at die-attach; the deep-void clean is deferred to G5 (post-de-rim)</td></tr>
+    <tr><td class="mono">G4</td><td>SOP-050 §6.4 / §7</td><td>Polished wafer face pristine at release; low-outgassing silicone cert on file</td><td>The polished face is the neighbour's void cap; a scratch/particle wrecks the contact, and a non-low-outgassing bond poisons the common vacuum</td></tr>
+    <tr><td class="mono">G5</td><td>SOP-050 §6.5–6.6</td><td>After de-rim: no detectable Zn in the active part (EDS); voids finally clean, dry, no capillary collapse (SEM)</td><td>The single deep-void clean lives here; residual Zn/salt = galvanic couple + creep + outgassing sealed into the vacuum</td></tr>
+    <tr><td class="mono">G6</td><td>SOP-050 §5</td><td>Wafer bow within the full-face-contact budget of SOP-060</td><td>A bowed cell will not seat flat on its neighbour's polished cap under atmospheric preload</td></tr>
+    <tr><td class="mono">G7</td><td>SOP-060 §7</td><td>Envelope integrity + vacuum-decay within spec; getter margin documented; single-point-failure accepted (graceful decay)</td><td>One common vacuum = one breach vents all; the envelope + getter are the whole life-support</td></tr>
   </table>
 
   <h2>4 · Document index</h2>
   <table>
     <tr><th>Doc</th><th>Title</th><th>Rev</th><th>File</th></tr>
-    <tr><td class="mono">ZnO-SOP-010</td><td>ZnO nanotip growth — 10 mM depletion (pre-growth light etch, no post-growth etch)</td><td class="mono">1.0</td><td class="mono">ZnO-SOP-010_nanotip_growth_10mM_depletion.md</td></tr>
-    <tr><td class="mono">ZnO-SOP-020</td><td>APTES functionalisation &amp; silver seeding (vapour APTES · AgNO₃ · DMAB)</td><td class="mono">1.0</td><td class="mono">ZnO-SOP-020_APTES_Ag_seeding.md</td></tr>
-    <tr><td class="mono">ZnO-SOP-030</td><td>Two-step electroless Ni-P — mid-P strike + high-P bulk, 25 µm</td><td class="mono">1.0</td><td class="mono">ZnO-SOP-030_electroless_NiP_plating.md</td></tr>
-    <tr><td class="mono">ZnO-SOP-040</td><td>Caustic strip &amp; clean/dry — rim-framed release</td><td class="mono">1.0</td><td class="mono">ZnO-SOP-040_caustic_strip_clean_dry.md</td></tr>
-    <tr><td class="mono">ZnO-SOP-050</td><td>Phase-1 bonding — silicone bond, butyl-land masking, rim trim</td><td class="mono">3.1</td><td class="mono">ZnO-SOP-050_phase1_silicone_bond_rim_trim.md</td></tr>
-    <tr><td class="mono">ZnO-SOP-060</td><td>Phase-2 stack close — plate-by-plate butyl compression under N₂</td><td class="mono">2.1</td><td class="mono">ZnO-SOP-060_phase2_stack_close.md</td></tr>
-    <tr><td class="mono">ZnO-DR-001</td><td>Carrier &amp; bath design reference (flow, orientations, station drawings)</td><td class="mono">1.0</td><td class="mono">ZnO-DR-001_carrier_bath_design_reference.html</td></tr>
-    <tr><td class="mono">ZnO-DR-002</td><td>Router-only layered carrier build detail (material map, exploded views, BOMs)</td><td class="mono">1.0</td><td class="mono">ZnO-DR-002_carrier_build_detail.html</td></tr>
-    <tr><td class="mono">ZnO-DR-003</td><td>Immersion &amp; seeding carrier — dimensioned cut set</td><td class="mono">1.0</td><td class="mono">ZnO-DR-003_immersion_carrier_cut_set.html</td></tr>
-    <tr><td class="mono">ZnO-DR-004</td><td>Carrier cut-file nesting — 300×287 bed, 3 DXF</td><td class="mono">1.0</td><td class="mono">ZnO-DR-004_carrier_cutfile_nesting.html</td></tr>
-    <tr><td class="mono">ZnO-DR-005</td><td>Strip edge-clamp carrier — dimensioned set</td><td class="mono">1.0</td><td class="mono">ZnO-DR-005_strip_carrier_cut_set.html</td></tr>
-    <tr><td class="mono">ZnO-DR-006</td><td>Bonding platen &amp; butyl-land mask — dimensioned set</td><td class="mono">1.0</td><td class="mono">ZnO-DR-006_platen_mask_cut_set.html</td></tr>
+    <tr><td class="mono">ZnO-SOP-010</td><td>ZnO nanotip growth — 10 mM depletion (acetic light etch); ⌀156 / 0.15 mm Zn blank</td><td class="mono">2.2</td><td class="mono">ZnO-SOP-010_nanotip_growth_10mM_depletion.md</td></tr>
+    <tr><td class="mono">ZnO-SOP-020</td><td>APTES functionalisation &amp; silver seeding (vapour APTES · AgNO₃ · ascorbate)</td><td class="mono">2.1</td><td class="mono">ZnO-SOP-020_APTES_Ag_seeding.md</td></tr>
+    <tr><td class="mono">ZnO-SOP-030</td><td>Two-step electroless Ni-P — mid-P strike + high-P bulk, 25 µm</td><td class="mono">2.1</td><td class="mono">ZnO-SOP-030_electroless_NiP_plating.md</td></tr>
+    <tr><td class="mono">ZnO-SOP-040</td><td>Caustic strip &amp; bulk clean/dry — rim-framed release (0.15 mm Zn; deep-void clean deferred to SOP-050)</td><td class="mono">1.3</td><td class="mono">ZnO-SOP-040_caustic_strip_clean_dry.md</td></tr>
+    <tr><td class="mono">ZnO-SOP-050</td><td>Phase-1 — nanovoid foil → silicon wafer die-attach, chemical de-rim + final clean</td><td class="mono">4.2</td><td class="mono">ZnO-SOP-050_phase1_wafer_bond_rim_trim.md</td></tr>
+    <tr><td class="mono">ZnO-SOP-060</td><td>Phase-2 — wafer-backed cells in a getter-maintained common vacuum (N-cell, ≤ 117; shiny-Si-down; silicone-band cartridge, pump→seal→vent)</td><td class="mono">3.2</td><td class="mono">ZnO-SOP-060_phase2_vacuum_stack_close.md</td></tr>
+    <tr><td class="mono">ZnO-DR-001</td><td>Carrier &amp; bath design reference (round; flow, orientations, station drawings)</td><td class="mono">2.0</td><td class="mono">ZnO-DR-001_carrier_bath_design_reference.html</td></tr>
+    <tr><td class="mono">ZnO-DR-002</td><td>Router-only layered carrier build detail (round plates, circular O-ring)</td><td class="mono">2.0</td><td class="mono">ZnO-DR-002_carrier_build_detail.html</td></tr>
+    <tr><td class="mono">ZnO-DR-003</td><td>Immersion &amp; seeding carrier — round dimensioned cut set</td><td class="mono">2.0</td><td class="mono">ZnO-DR-003_immersion_carrier_cut_set.html</td></tr>
+    <tr><td class="mono">ZnO-DR-004</td><td>Carrier cut-file nesting (round) — 300×287 bed, 1 plate/bed</td><td class="mono">2.0</td><td class="mono">ZnO-DR-004_carrier_cutfile_nesting.html</td></tr>
+    <tr><td class="mono">ZnO-DR-005</td><td>Strip edge-clamp carrier — round dimensioned set</td><td class="mono">2.0</td><td class="mono">ZnO-DR-005_strip_carrier_cut_set.html</td></tr>
+    <tr><td class="mono">ZnO-DR-006</td><td>Wafer bonding chuck — dimensioned set (butyl mask retired)</td><td class="mono">2.0</td><td class="mono">ZnO-DR-006_wafer_chuck_cut_set.html</td></tr>
     <tr><td class="mono">—</td><td>Tier-1 growth calibration workbook — <b>OBSOLETE, withdrawn</b>; calibrate per SOP-010 §7 / O3 instead</td><td class="mono">—</td><td class="mono">(ZnO_calibration_matrix.xlsx — do not use)</td></tr>
-    <tr><td class="mono">—</td><td>Cut files: ¼″ PVDF · ½″ PP · ⅜″ PP · platen (Al) · frame (PVDF)</td><td class="mono">R12</td><td class="mono">ZnO_cut_PVDF_quarter.dxf · ZnO_cut_PP_half.dxf · ZnO_cut_PP_threeEighth.dxf · ZnO_cut_platen_alum.dxf · ZnO_cut_frame_PVDF.dxf</td></tr>
+    <tr><td class="mono">—</td><td>Cut files (round): ¼″ PVDF · ½″ PP · ⅜″ PP · wafer chuck (Al) · frame (PVDF, <b>retired</b>)</td><td class="mono">R12</td><td class="mono">ZnO_cut_PVDF_quarter.dxf · ZnO_cut_PP_half.dxf · ZnO_cut_PP_threeEighth.dxf · ZnO_cut_platen_alum.dxf · ZnO_cut_frame_PVDF.dxf</td></tr>
   </table>
-  <p class="lede">Revision status: the Markdown SOPs are the sole controlled copies (no Word duplicates exist). The Tier-1 calibration workbook is withdrawn as obsolete — growth and plating rates are calibrated on first runs per open item O3.</p>
+  <p class="lede">Revision status: the Markdown SOPs are the sole controlled copies (no Word duplicates exist). <b>Filenames shown are the normalized target names</b> — several files on disk still carry interim <span class="mono">_rev*</span> suffixes and will be renamed at the version cut (release pass), along with MANIFEST/CHECKSUMS/README/mirrors. The Tier-1 calibration workbook is withdrawn; growth and plating rates are calibrated on first runs per open item O3.</p>
 
   <h2>5 · Stations &amp; fixtures</h2>
   <table>
     <tr><th>Station</th><th>Environment</th><th>Fixture</th><th>Body / seal</th></tr>
-    <tr><td>Fume hood A — growth</td><td>vented, 90 °C</td><td>Immersion carrier (growth unit)</td><td>PVDF or PP / FKM</td></tr>
-    <tr><td>Glovebox train — seeding</td><td>dry N₂ · amber for Ag</td><td>Seeding carrier + vapour chamber</td><td>PVDF (PEEK opt.) / FKM · no bare metal</td></tr>
-    <tr><td>Fume hood B — plating</td><td>vented, 65–90 °C</td><td>Immersion carrier (plating unit)</td><td>PVDF / FKM · non-catalytic fasteners</td></tr>
-    <tr><td>Fume hood C — strip</td><td>vented, H₂-safe, 45 °C</td><td>Strip edge-clamp carrier</td><td><b>PP / EPDM / Ti + Belleville</b> · no Al, no glass</td></tr>
-    <tr><td>Bonding bench — Phase 1</td><td>ambient, clean</td><td>Vacuum platen + <b>PTFE film mask + clamp frame</b> (DR-006)</td><td>MIC-6 tooling plate / PTFE film mask · venturi</td></tr>
-    <tr><td>N₂ glovebox — Phase 2</td><td>dry N₂, O₂/H₂O monitored</td><td>Registration fixture + PIB applicator</td><td>— · <b>no silicone applied in-box</b></td></tr>
+    <tr><td>Fume hood A — growth</td><td>vented, 90 °C</td><td>Immersion carrier (growth unit), round</td><td>PVDF or PP / FKM</td></tr>
+    <tr><td>Glovebox train — seeding</td><td>dry N₂ · amber for Ag</td><td>Seeding carrier + vapour chamber, round</td><td>PVDF (PEEK opt.) / FKM · no bare metal</td></tr>
+    <tr><td>Fume hood B — plating</td><td>vented, 65–90 °C</td><td>Immersion carrier (plating unit), round</td><td>PVDF / FKM · non-catalytic fasteners</td></tr>
+    <tr><td>Fume hood C — strip</td><td>vented, H₂-safe (~4× Zn load), 45 °C</td><td>Strip edge-clamp carrier, round</td><td><b>PP / EPDM / Ti + Belleville</b> · no Al, no glass, no Si</td></tr>
+    <tr><td>Bonding bench — Phase 1</td><td>ambient, clean, near-RT cure</td><td>Wafer bonding chuck (DR-006) + <b>silicone-free chuck pad</b></td><td>MIC-6 chuck · low-outgassing silicone · venturi</td></tr>
+    <tr><td>Vacuum-seal bench — Phase 2</td><td>ambient; chamber sealer</td><td>Registration fixture + <b>chamber vacuum sealer</b> + barrier envelope</td><td>metallized barrier laminate · getter · 1/8″ Al platens · silicone bands</td></tr>
   </table>
 
   <h2>6 · Consolidated purchasing</h2>
   <table>
     <tr><th>Category</th><th>Item / spec</th><th>Used at</th></tr>
-    <tr><td rowspan="4">Chemistry</td><td>Zn(NO₃)₂·6H₂O, HMTA, HCl (dil.), acetone, IPA</td><td>SOP-010</td></tr>
-    <tr><td>APTES (anhydrous), AgNO₃, DMAB, ethanol</td><td>SOP-020</td></tr>
+    <tr><td rowspan="4">Chemistry</td><td>Zn(NO₃)₂·6H₂O, HMTA, acetic acid (dil.), acetone, IPA</td><td>SOP-010</td></tr>
+    <tr><td>APTES (anhydrous), AgNO₃, sodium ascorbate, ethanol</td><td>SOP-020</td></tr>
     <tr><td>NiSO₄·6H₂O, NaH₂PO₂·H₂O, citrate, glycine, lactic acid, acetate, Pb stabiliser</td><td>SOP-030</td></tr>
-    <tr><td>NaOH, DI water (Type I/II), dry N₂</td><td>SOP-040 / all</td></tr>
-    <tr><td rowspan="3">Stack materials</td><td>Al 5052 0.025″ sheet (plates + spacers); Al 6061 0.125″ (end plates)</td><td>SOP-050/060</td></tr>
-    <tr><td>IGU-grade PIB hot-melt (or uncured butyl tape); RT structural silicone; RT thermally-conductive dielectric silicone (addition-cure, low-outgassing)</td><td>SOP-050/060</td></tr>
-    <tr><td>N₂-sparing O₂/moisture getters ×30/stack</td><td>SOP-060</td></tr>
-    <tr><td rowspan="4">Fixture stock</td><td>PVDF sheet ¼″; PP sheet ½″ + ⅜″; PEEK ¼″ (opt.); PTFE rod/spacers; PVDF &amp; PP rod</td><td>DR-002/003/005</td></tr>
-    <tr><td>FKM O-ring cord 1/16″ + splice kit; EPDM cord 1/16″ + splice kit</td><td>carriers</td></tr>
-    <tr><td>Ti M4 bolts/nuts + Belleville washers; PVDF/PEEK M4 bolts</td><td>carriers</td></tr>
-    <tr><td>Venturi vacuum + tubing/fittings; hand tap set; deburr tools</td><td>platen / shop</td></tr>
-    <tr><td rowspan="2">Equipment</td><td>Stir-hotplates ×3+; rectangular vessels (0.5–0.8 L class); sonicator; UV-ozone or O₂ plasma; hot-melt PIB applicator</td><td>line</td></tr>
-    <tr><td>He leak tester (fine/gross); access to SEM/EDS, XRF; RGA for witness cells</td><td>QC</td></tr>
+    <tr><td>NaOH, DI water (Type I/II), dry N₂ — bath charge sized for ~4× the old Zn load</td><td>SOP-040 / all</td></tr>
+    <tr><td rowspan="4">Stack materials</td><td><b>150 mm single-side-polished Si wafers</b> (backer + neighbour cap), ~0.675 mm</td><td>SOP-050/060</td></tr>
+    <tr><td><b>Low-outgassing (ASTM E595) RT/addition-cure dielectric silicone</b> — die-attach (thermally-conductive grade preferred)</td><td>SOP-050</td></tr>
+    <tr><td><b>Metallized barrier laminate envelope</b> (VIP-grade, heat-sealable); <b>2× 1/8″ aluminium end platens</b> (flat, clean); <b>2–3 low-outgassing silicone retaining bands</b></td><td>SOP-060</td></tr>
+    <tr><td><b>General O₂/H₂O + molecular-sieve (±NEG) getter</b>, vacuum-maintaining, oversized, ×1/stack</td><td>SOP-060</td></tr>
+    <tr><td rowspan="4">Fixture stock</td><td>PVDF sheet ¼″; PP sheet ½″ + ⅜″; PEEK ¼″ (opt.); PTFE rod/spacers; PVDF &amp; PP rod; silicone-free chuck pad</td><td>DR-002/003/005/006</td></tr>
+    <tr><td>FKM O-ring cord 1/16″ + splice kit; EPDM cord 1/16″ + splice kit (circular ⌀143 rings — no corner splice)</td><td>carriers</td></tr>
+    <tr><td>Ti &amp; PVDF/PEEK M4 bolts/nuts + Belleville washers — <b>12 per carrier</b></td><td>carriers</td></tr>
+    <tr><td>Venturi vacuum + tubing/fittings; hand tap set; deburr tools</td><td>chuck / shop</td></tr>
+    <tr><td rowspan="2">Equipment</td><td>Stir-hotplates ×3+; round/large single-use vessels (~1–1.5 L); sonicator; UV-ozone or O₂ plasma; <b>chamber vacuum sealer + gauge</b>; 150 mm wafer vacuum chuck (build per DR-006 or bought)</td><td>line</td></tr>
+    <tr><td><b>Vacuum-decay / pressure-rise tester</b> (envelope); access to SEM/EDS, XRF; wafer-bow gauge</td><td>QC</td></tr>
   </table>
 
   <h2>7 · Open items (validate before production)</h2>
   <table>
     <tr><th>#</th><th>Item</th><th>Where it bites</th></tr>
-    <tr><td class="mono">O1</td><td>Zinc-rim stiffness: does the unetched 13 mm rim tension the etched centre through transfer? (fallback: front-side support)</td><td>SOP-040→050 handoff</td></tr>
-    <tr><td class="mono">O2</td><td>Mid-P liner NaOH resistance at the chosen strip conditions (witness coupons)</td><td>SOP-040 §5.1</td></tr>
+    <tr><td class="mono">O1</td><td>Zinc-rim stiffness: does the 13 mm rim tension the etched centre through transfer? (0.15 mm zinc should help substantially; fallback: front-side support)</td><td>SOP-040→050 handoff</td></tr>
+    <tr><td class="mono">O2</td><td>Mid-P liner NaOH resistance at the chosen strip conditions, now with a ~4× zinc/zincate bath load (witness coupons)</td><td>SOP-040 §5.1</td></tr>
     <tr><td class="mono">O3</td><td>Growth &amp; plating deposition rates — calibrate on first runs (times in the SOPs are priors)</td><td>SOP-010 / 030</td></tr>
-    <tr><td class="mono">O4</td><td>Butyl compression assurance: skin alone vs skin + perimeter clamp for life-long squeeze</td><td>SOP-060 §6.4 / G7</td></tr>
-    <tr><td class="mono">O5</td><td>Drying method for the nanovoids: evaporative + IPA vs critical-point (check by SEM on first parts)</td><td>SOP-040 §5.3</td></tr>
-    <tr><td class="mono">O6</td><td>Single-fault partition deflection: 0.025″ clamped plate under 0.22 atm with the chosen getter standoff</td><td>stack design</td></tr>
-    <tr><td class="mono">O7</td><td><b>CLOSED</b> — platen + mask dimensioned in ZnO-DR-006 (film-mask architecture; film also sets the bondline)</td><td>fixture set</td></tr>
+    <tr><td class="mono">O4</td><td>Common-vacuum single-point-failure: single vs double envelope, and getter margin, so a breach decays gracefully rather than collapsing</td><td>SOP-060 §2 / G7</td></tr>
+    <tr><td class="mono">O5</td><td>Single final dry after the SOP-050 de-rim: baseline IPA/N₂ vs critical-point escalation (check by SEM on first parts)</td><td>SOP-050 §6.5</td></tr>
+    <tr><td class="mono">O6</td><td>Getter sizing vs permeation + silicone outgassing over service life at ~1–100 Pa; and Ni/Si CTE bow within the full-face contact budget</td><td>SOP-050/060</td></tr>
+    <tr><td class="mono">O7</td><td><b>CLOSED</b> — wafer bonding chuck dimensioned in ZnO-DR-006; butyl-land mask + PVDF frame retired</td><td>fixture set</td></tr>
+    <tr><td class="mono">O8</td><td><b>CLOSED</b> — ~1–100 Pa rough–medium vacuum confirmed adequate for the intended measurement</td><td>SOP-060 §2</td></tr>
   </table>
 
-  <footer><span>ZnO-SP-001 · Rev 1.0</span><span>Consolidated shop packet · full line</span><span>CC0 1.0 &middot; Croft Swonyoung</span></footer>
+  <footer><span>ZnO-SP-001 · Rev 2.0</span><span>Consolidated shop packet · full line (silicon-wafer / common-vacuum)</span><span>CC0 1.0 &middot; Croft Swonyoung</span></footer>
 </div>
 </body>
 </html>

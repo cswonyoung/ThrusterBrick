@@ -2,7 +2,7 @@
 
 **Author / Affirmer:** Croft Swonyoung
 **Work:** *ZnO Nanovoid Process* document set — 18 files (see `MANIFEST.md`)
-**Dedication date:**   2026-07-06
+**Dedication date:**   2026-07-09
 **Published from:**   United States
 
 To the extent possible under law, **Croft Swonyoung** has waived all copyright

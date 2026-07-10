@@ -12,8 +12,8 @@
 
 | Field | Value | Field | Value |
 |---|---|---|---|
-| Document no. | ZnO-SOP-030 | Revision | 2.0 |
-| Effective date | ____________ | Supersedes | Rev 1.0 |
+| Document no. | ZnO-SOP-030 | Revision | 2.1 |
+| Effective date | ____________ | Supersedes | Rev 2.0 |
 | Author | Croft Swonyoung | Approved by | ____________ |
 | Predecessor step | ZnO-SOP-020 (APTES + Ag seeding) | Next step | ZnO-SOP-040 (caustic strip / release) |
 
@@ -28,7 +28,7 @@ This procedure deposits a two-layer electroless nickel-phosphorus (Ni-P) coating
 
 **Target:** 25 µm total nickel thickness (~2–3 µm Step 1 + balance Step 2), one face only.
 
-**Substrate:** Ag-seeded ZnO nanotips on Zn foil, 70 µm × ~100 × 125 mm, mounted in a carrier that masks the reverse face; from ZnO-SOP-020.
+**Substrate:** Ag-seeded ZnO nanotips on Zn foil, **0.15 mm × ⌀156 round blank** (⌀130 active area), mounted in a carrier that masks the reverse face; from ZnO-SOP-020.
 
 **Output:** a 25 µm Ni-P-coated coupon ready for temporary-carrier mounting and the NaOH strip.
 
@@ -82,7 +82,7 @@ Consult the SDS for each reagent before starting. Key hazards:
 
 - Two dedicated heated baths (hotplate or immersion heater) with stable control; **do not share vessels between Step 1 and Step 2** (dragout cross-contaminates).
 - Calibrated thermometer/thermocouple per bath; pH meter.
-- Fume hood; loosely covered inert (glass/PP/PTFE) vessels sized to submerge the 125 mm coupon.
+- Fume hood; loosely covered inert (glass/PP/PTFE) vessels sized to submerge the ⌀156 coupon in its round carrier (~⌀210–230).
 - Continuous or periodic filtration (1–5 µm), mild agitation (air sparge or gentle mechanical).
 - Micropipette / micro-burette for stabiliser stock dosing.
 - Substrate carrier masking the reverse face; PTFE-tipped tweezers; analytical balance; timer; DI rinse stations.
@@ -132,7 +132,7 @@ Bi(NO₃)₃·5H₂O hydrolyses to insoluble basic salts in plain water — **ma
 ### 5.3 Bath operating envelope (both steps)
 
 - **Loading:** ~0.5–1 dm² plated area per litre of bath.
-- **Volume:** size to submerge the coupon with clearance; ~1.0–1.5 L per coupon is typical. A single charge easily supplies 25 µm on one 125 cm² face (~0.28 g Ni) without replenishment.
+- **Volume:** size to submerge the round coupon (in its ⌀190 carrier) with clearance; **~1.5–2.5 L per coupon** — the ⌀130 active face is ~133 cm² (≈1.33 dm²), so at ~0.5–1 dm²/L a single charge supplies 25 µm without replenishment; confirm on the first run.
 - **Agitation:** mild and uniform; avoid vigorous turbulence over the nanostructure.
 - **Filtration:** continuous or frequent to prevent nodular roughness.
 
@@ -229,3 +229,4 @@ Bi(NO₃)₃·5H₂O hydrolyses to insoluble basic salts in plain water — **ma
 |---|---|---|---|
 | 1.0 | __________ | ____________ | Initial release — two-step mid-P/high-P electroless Ni-P to 25 µm total; Pb (or thiourea) stabiliser. |
 | 2.0 | __________ | ____________ | Lower-toxicity substitution: lead acetate / thiourea stabiliser replaced by bismuth (~0.5–1 ppm Bi from acidic Bi(NO₃)₃ stock, §5.2a). Narrower-window caution and mandatory first-run re-qualification (rate, P content, stress/flatness, decomposition margin) added to §7. |
+| 2.1 | __________ | Croft Swonyoung | Substrate updated to 0.15 mm zinc, ⌀156 round blank (⌀130 active ≈133 cm²) for the round wafer-scale set (was 70 µm × 100×125); bath volume raised to ~1.5–2.5 L/coupon and vessel sizing to ⌀210–230 accordingly. Plating chemistry, two-step split, and 25 µm target unchanged. |

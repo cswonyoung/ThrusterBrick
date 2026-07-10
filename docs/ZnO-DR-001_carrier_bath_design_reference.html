@@ -76,7 +76,7 @@
 
   <div class="ctrl">
     <div class="k">Document no.</div><div class="mono">ZnO-DR-001</div>
-    <div class="k">Revision</div><div class="mono">1.0</div>
+    <div class="k">Revision</div><div class="mono">2.0</div>
     <div class="k">Complements</div><div class="mono">SOP-010 … SOP-060</div>
     <div class="k">Effective</div><div class="mono">____________</div>
     <div class="k">Author</div><div class="mono">____________</div>
@@ -111,8 +111,9 @@
     <tr><td class="mono">9</td><td>Plating 2 (high-P, 85–90 °C)</td><td>down/tilted</td><td>Immersion (plating)</td><td><b>mild</b></td><td>rinse between baths</td></tr>
     <tr><td class="mono">10</td><td>NaOH strip (45 °C)</td><td>zinc/work face to bath, high-P backed</td><td>Strip edge-clamp</td><td><b>mild–mod — stir bar</b></td><td>preserve 13 mm rim</td></tr>
     <tr><td class="mono">11</td><td>Rinse / solvent-exchange / dry</td><td>same</td><td>Strip edge-clamp</td><td>cascade/gentle</td><td>now rim-framed</td></tr>
-    <tr><td class="mono">12</td><td>Lay-down bond to Al + trim rim</td><td>void up, high-P down</td><td>bonding platen</td><td>none</td><td>grip stiff zinc rim</td></tr>
+    <tr><td class="mono">12</td><td>Die-attach to Si wafer + trim rim</td><td>void up, high-P down</td><td>wafer chuck</td><td>none</td><td>grip stiff zinc rim</td></tr>
   </table>
+  <p class="lede" style="font-size:12px"><b>Substrate:</b> 0.15 mm zinc foil, round <b>⌀156</b> blank; the etch defines a <b>⌀130</b> active circle inside a 13 mm handling rim, to back a 150 mm silicon wafer (ZnO-SOP-050/060 Rev 4.0/3.0).</p>
 
   <h2>4 · Carrier designs — three, plus a platen</h2>
   <table>
@@ -120,15 +121,15 @@
     <tr><td><b>1 · Immersion process</b></td><td>2 dedicated (growth, plating)</td><td>3; 8–9</td><td>handle above liquid; standoff legs over a stir-bar zone; back-mask gasket</td><td>PVDF body (PP ok for growth); <b>FKM/Viton or PTFE gasket — never silicone</b></td></tr>
     <tr><td><b>2 · Seeding</b></td><td>1</td><td>4–7</td><td>110 °C-rated; fits plasma chamber / vapour desiccator / hotplate; <b>no bare metal</b> (would reduce Ag)</td><td>PVDF, PTFE, or PEEK</td></tr>
     <tr><td><b>3 · Strip edge-clamp</b></td><td>1</td><td>10–11</td><td>edge clamp preserving the 13 mm rim; high-P backed; standoff for stir</td><td>PP / PTFE / PVDF or passivated SS; <b>Ti or all-plastic springs; no Al, no glass</b></td></tr>
-    <tr><td><i>(Bonding platen)</i></td><td>1</td><td>12</td><td>flat, level vacuum table; PTFE film mask on the butyl land; not immersion (detailed in ZnO-DR-006)</td><td>½″ MIC-6 Al, surfaced flat in place; 0.005″ PTFE film mask (consumable)</td></tr>
+    <tr><td><i>(Wafer chuck)</i></td><td>1</td><td>12</td><td>flat, level vacuum chuck holding a 150 mm wafer polished-face-down on a clean pad; not immersion (detailed in ZnO-DR-006)</td><td>½″ MIC-6 Al, surfaced flat in place; compliant silicone-free chuck pad</td></tr>
   </table>
-  <p class="lede">Growth and plating share <b>design #1</b> as two physically separate units (the growth unit simply never receives a stir bar). Net: <b>three carrier designs plus a bonding platen.</b></p>
+  <p class="lede">Growth and plating share <b>design #1</b> as two physically separate units (the growth unit simply never receives a stir bar). Net: <b>three carrier designs plus a wafer bonding chuck.</b></p>
 
   <h2>5 · Bath &amp; vessel</h2>
   <table>
     <tr><th>Parameter</th><th>Spec</th><th>Note</th></tr>
-    <tr><td>Vessel form</td><td>rectangular, single-use</td><td>sized to coupon (100×125) + carrier + 10–15 mm clearance</td></tr>
-    <tr><td>Charge volume</td><td>~0.5–0.8 L</td><td>vs several L in a round beaker — cuts reagent &amp; waste</td></tr>
+    <tr><td>Vessel form</td><td>rectangular/round, single-use</td><td>sized to the ⌀156 coupon + carrier + 10–15 mm clearance (~⌀210 or 210 mm square)</td></tr>
+    <tr><td>Charge volume</td><td>~1.0–1.5 L</td><td>larger than the old 100×125 coupon, but still far below a beaker fill</td></tr>
     <tr><td>Heat + agitation</td><td>magnetic stir-hotplate</td><td>one tool: heat and stir bar from below</td></tr>
     <tr><td>Standoff</td><td>legs lift face-down foil above the bar</td><td>upward/cross flow sweeps the working face</td></tr>
     <tr><td>Growth</td><td>static (no bar)</td><td>depletion run; do not disturb</td></tr>
@@ -139,7 +140,7 @@
   <h2>6 · Material cautions</h2>
   <table>
     <tr><th style="width:32%">Rule</th><th>Why</th></tr>
-    <tr><td>Gaskets: FKM/Viton or PTFE — never silicone</td><td>a silicone gasket seeds the contamination that poisons the downstream butyl seal</td></tr>
+    <tr><td>Gaskets: FKM/Viton or PTFE — never silicone</td><td>a silicone gasket sheds contamination onto the working face and later outgasses inside the sealed common-vacuum stack (ZnO-SOP-060)</td></tr>
     <tr><td>Plating carrier: non-catalytic plastic, silver-free</td><td>electroless Ni plates only the foil, not the fixture; no stray silver drag-in</td></tr>
     <tr><td>Strip carrier: no aluminium, no glass</td><td>both are attacked by hot NaOH (Al dissolves; glass slowly etches)</td></tr>
     <tr><td>Seeding carrier: no bare metal</td><td>reactive metal would reduce/consume the silver bath</td></tr>
@@ -264,9 +265,10 @@
 
     <!-- F · BONDING -->
     <div class="fig">
-      <svg viewBox="0 0 360 250" role="img" aria-label="Lay-down bond: foil laid onto a silicone-wetted aluminium plate, void up, not pressed">
+      <svg viewBox="0 0 360 250" role="img" aria-label="Die-attach: foil laid onto a silicone-wetted silicon wafer rough side, void up, not pressed">
         <rect class="d-vessel" x="40" y="196" width="280" height="20"/>
-        <rect class="d-al" x="70" y="180" width="220" height="16"/>
+        <rect class="d-al" x="76" y="188" width="208" height="6" style="fill:#e7ded0;stroke:#b7a888"/>
+        <rect class="d-al" x="70" y="180" width="220" height="8" style="fill:#c9d3da"/>
         <rect class="d-sil" x="72" y="174" width="216" height="6"/>
         <!-- foil mid lay-down: left edge on silicone, right edge lifted; void face up -->
         <polygon class="d-foil" points="80,168 210,168 250,140 120,140"/>
@@ -277,19 +279,19 @@
         <text class="d-lbl" x="266" y="118">lay from one edge</text>
         <text class="d-lbla" x="130" y="132">void face ↑</text>
         <text class="d-lbl" x="70" y="152">high-P → silicone</text>
-        <text class="d-lbl" x="292" y="190">Al plate</text>
-        <line class="d-leader" x1="290" y1="188" x2="270" y2="188"/>
-        <text class="d-lbl" x="40" y="230">vacuum platen</text>
+        <text class="d-lbl" x="292" y="186">Si wafer (rough ↑)</text>
+        <line class="d-leader" x1="290" y1="184" x2="270" y2="184"/>
+        <text class="d-lbl" x="30" y="230">wafer chuck (polished ↓ on pad)</text>
         <text class="d-note" x="200" y="234" text-anchor="middle">LAY — DON'T PRESS · TRIM RIM AFTER CURE</text>
       </svg>
-      <div class="cap"><div class="t">F · Lay-down bond + trim</div><div class="s">Bonding platen · station 12</div>
-        <div class="d">Silicone on the plate; the rim-framed foil laid on high-P-down, void-up, never pressed; rim trimmed after cure.</div></div>
+      <div class="cap"><div class="t">F · Die-attach + trim</div><div class="s">Wafer chuck · station 12</div>
+        <div class="d">Low-outgassing silicone on the wafer's rough (up) side; the rim-framed foil laid on high-P-down, void-up, never pressed; rim trimmed after cure. Polished wafer face stays down and clean.</div></div>
     </div>
 
   </div>
 
   <h2>8 · Summary</h2>
-  <p class="lede">Three carrier designs cover the line — an <b>immersion process carrier</b> (built as two dedicated units for growth and plating), a <b>seeding carrier</b>, and a <b>strip edge-clamp carrier</b> — plus a flat <b>bonding platen</b> that is not a carrier. All baths are single-use, rectangular, and volume-minimised on stir-hotplates; growth runs static, plating and strip run stirred via a bar beneath the standoff. The working face is amber in every drawing and is never contacted directly: face-down in the wet baths, face-up for the dry and lay-down steps.</p>
+  <p class="lede">Three carrier designs cover the line — an <b>immersion process carrier</b> (built as two dedicated units for growth and plating), a <b>seeding carrier</b>, and a <b>strip edge-clamp carrier</b> — plus a flat <b>wafer bonding chuck</b> that is not a carrier. All baths are single-use, volume-minimised on stir-hotplates; growth runs static, plating and strip run stirred via a bar beneath the standoff. The working face is amber in every drawing and is never contacted directly: face-down in the wet baths, face-up for the dry and die-attach steps.</p>
 
   <h2>9 · Open items (verify while detailing the carriers)</h2>
   <table>
@@ -300,7 +302,7 @@
     <tr><td>Standoff vs gap</td><td>Standoff height clears the stir bar without excessive bath depth (volume).</td></tr>
   </table>
 
-  <footer><span>ZnO-DR-001 · Rev 1.0</span><span>Carrier &amp; Bath Design Reference</span><span>CC0 1.0 &middot; Croft Swonyoung</span></footer>
+  <footer><span>ZnO-DR-001 · Rev 2.0</span><span>Carrier &amp; Bath Design Reference (round)</span><span>CC0 1.0 &middot; Croft Swonyoung</span></footer>
 </div>
 </body>
 </html>

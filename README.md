@@ -38,7 +38,8 @@ Arweave/IPFS).
 ## Scope note
 These documents describe the *fabrication* of a stacked nickel "nanovoid"
 structure (grow ZnO nanotips → seed → electroless Ni-P → strip the template →
-bond → seal cells under nitrogen). They specify how to build the article; they
+bond each foil to a silicon wafer → stack and seal the wafer cells under a common
+vacuum). They specify how to build the article; they
 do not, by themselves, establish what net energy or other output the finished
 article produces. Anyone reproducing the work should measure inputs and outputs
 directly, with controls. Open publication under CC0 is what makes that

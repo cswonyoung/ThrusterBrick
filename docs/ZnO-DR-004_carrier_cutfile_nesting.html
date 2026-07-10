@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Carrier Cut-File Nesting · ZnO-DR-004</title>
+<title>Carrier Cut-File Nesting (round) · ZnO-DR-004</title>
 <style>
 :root{--ink:#1c2733;--steel:#345f78;--steel2:#5b8299;--rule:#cdd7de;--ground:#f6f9fa;--wash:#e9f0f4;--amber:#c9791b;--paper:#fff;
 --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
@@ -21,199 +21,163 @@ tbody tr:nth-child(even) td{background:#f7fafb}
 .ctrl div{padding:5px 9px;border-bottom:1px solid var(--rule)}
 .ctrl .k{background:var(--wash);font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:#3a5668}
 .ctrl div:nth-last-child(-n+4){border-bottom:0}
-.nests{display:grid;grid-template-columns:1fr;gap:18px}
+.nests{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .nest{border:1px solid var(--rule)}
 .nesthead{display:flex;justify-content:space-between;align-items:center;background:var(--wash);padding:7px 12px;border-bottom:1px solid var(--rule)}
-.nesthead .mat{font-weight:650;font-size:14px}
-.nesthead .file{font-family:var(--mono);font-size:11px;color:var(--steel)}
+.nesthead .mat{font-weight:650;font-size:13px}
+.nesthead .file{font-family:var(--mono);font-size:10px;color:var(--steel)}
 .svgwrap{padding:14px 16px;background:var(--ground)}
-.svgwrap svg{display:block;width:100%;height:auto;max-width:560px;margin:0 auto}
+.svgwrap svg{display:block;width:100%;height:auto;max-width:420px;margin:0 auto}
 .ndesc{padding:8px 12px;font-size:12px;color:#41535f}
 .ndesc .util{font-family:var(--mono);color:var(--steel);margin-left:6px}
-/* nest svg element styles */
+.legend{font-size:11.5px;color:#41535f;margin-top:4px}
+.sw{display:inline-block;width:22px;height:0;vertical-align:middle;margin:0 4px 0 12px}
 .sheet{fill:#eef3f6;stroke:#7a8791;stroke-width:1.2;stroke-dasharray:6 4}
 .cut{fill:#fbfcfc;stroke:#2c3a45;stroke-width:1.3}
 .win{fill:#e5edf2;stroke:#2c3a45;stroke-width:1}
 .grv{fill:none;stroke:#8a3b3b;stroke-width:1;stroke-dasharray:4 2.5}
 .pkt{fill:none;stroke:#7a8791;stroke-width:.8;stroke-dasharray:3 2}
+.bc{fill:none;stroke:#b06d15;stroke-width:.6;stroke-dasharray:2 3}
 .hole{fill:#fff;stroke:#2c3a45;stroke-width:.9}
 .ptxt{font:600 9px var(--mono);fill:#5b6b76}
-.legend{font-size:11.5px;color:#41535f;margin-top:4px}
-.sw{display:inline-block;width:22px;height:0;vertical-align:middle;margin:0 4px 0 12px}
 footer{margin-top:34px;padding-top:12px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:10.5px;color:#6a7883;display:flex;justify-content:space-between}
+@media (max-width:760px){.nests{grid-template-columns:1fr}}
 @media print{body{background:#fff}.sheetdoc{box-shadow:none;margin:0;max-width:none}}
 </style></head><body>
 <div style="max-width:960px;margin:20px auto 0;padding:11px 16px;border:1px solid #cdd7de;border-left:4px solid #c9791b;background:#f3f7f9;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;line-height:1.5;color:#2c4658"><strong style="letter-spacing:.05em;text-transform:uppercase;color:#345f78">Public Domain &middot; CC0 1.0 Universal</strong> &mdash; Author: <strong>Croft Swonyoung</strong>. To the extent possible under law, the author has waived all copyright and related or neighbouring rights to this document and dedicates it to the public domain worldwide. No warranty. <a href="https://creativecommons.org/publicdomain/zero/1.0/" style="color:#345f78">https://creativecommons.org/publicdomain/zero/1.0/</a></div>
 
 <div class="sheetdoc">
   <div class="eyebrow">ZnO Nanovoid Process · Fabrication Reference</div>
-  <h1>Carrier Cut-File Nesting</h1>
-  <p class="sub">Parts nested on 300 × 287 mm sheets cut to the router bed · one DXF per material · datum bottom-left (0,0), mm</p>
+  <h1>Carrier Cut-File Nesting (round)</h1>
+  <p class="sub">Round ⌀190 plates nested on 300 × 287 mm sheets · one DXF per material · datum bottom-left (0,0), mm</p>
   <div class="ctrl">
     <div class="k">Document no.</div><div class="mono">ZnO-DR-004</div>
-    <div class="k">Revision</div><div class="mono">1.0</div>
+    <div class="k">Revision</div><div class="mono">2.0</div>
     <div class="k">Bed / sheet</div><div class="mono">300 × 287 mm</div>
     <div class="k">Files</div><div class="mono">3 × .dxf (R12)</div>
     <div class="k">Datum</div><div class="mono">bottom-left (0,0)</div>
-    <div class="k">Parent</div><div class="mono">ZnO-DR-002 / DR-003</div>
+    <div class="k">Parent</div><div class="mono">ZnO-DR-002 / DR-003 / DR-005</div>
   </div>
 
-  <h2>1 · Packing result</h2>
-  <p class="lede">The 140 × 166 plate is large relative to a 300 × 287 bed: two fit (side by side, 280 mm across), and <b>no orientation admits a third</b> — a third plate needs a 140 mm minimum dimension and only a 121 mm strip remains. So the ceiling is <b>two plates per sheet</b>, and the nests below use the leftover top strip for the handle strip. Utilisation runs ~54–60 %; the balance is inherent to this plate-to-bed ratio, not the packing.</p>
+  <h2>1 · Packing result — one plate per bed</h2>
+  <p class="lede">The round ⌀190 carrier plate is larger than half the 300 mm bed width, so <b>only one plate fits per sheet</b> — two ⌀190 circles cannot be placed on a 300 × 287 bed at any angle (their centres would need to be ≥190 mm apart, but the usable inner box only allows ~147 mm). This is set by the ⌀156 wafer-scale coupon plus the bolt circle that must ring it, and is inherent to the plate-to-bed ratio, not the packing. Utilisation runs ~33–39 %; the balance is unavoidable at this size. (A ⌀156 <i>blank</i> alone would nest two-up diagonally, but the part cut here is the ⌀190 <i>plate</i>.)</p>
 
   <h2>2 · The three cut files</h2>
   <div class="nests">
     <div class="nest">
-      <div class="nesthead"><span class="mat">¼″ PVDF</span><span class="file">ZnO_cut_PVDF_quarter.dxf</span></div>
+      <div class="nesthead"><span class="mat">¼″ PVDF · bed A</span><span class="file">ZnO_cut_PVDF_quarter.dxf</span></div>
       <div class="svgwrap"><svg viewBox="-6 -6 312.0 299.0" xmlns="http://www.w3.org/2000/svg">
 <rect x="0" y="0" width="300.0" height="287.0" class="sheet"/>
-<rect x="4.00" y="117.00" width="140.00" height="166.00" class="cut"/>
-<rect x="37.00" y="150.50" width="74.00" height="99.00" class="win"/>
-<rect x="30.50" y="144.00" width="87.00" height="112.00" class="grv"/>
-<circle cx="14.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="134.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="14.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="134.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="14.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="14.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="134.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="134.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="74.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="74.00" cy="127.00" r="2.20" class="hole"/>
-<text x="74.0" y="200.0" class="ptxt" text-anchor="middle">WINDOW PLATE</text>
-<rect x="156.00" y="117.00" width="140.00" height="166.00" class="cut"/>
-<rect x="176.00" y="137.50" width="100.00" height="125.00" class="pkt"/>
-<circle cx="166.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="286.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="166.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="286.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="166.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="166.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="286.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="286.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="226.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="226.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="211.00" cy="125.00" r="2.20" class="hole"/>
-<circle cx="241.00" cy="125.00" r="2.20" class="hole"/>
-<text x="226.0" y="200.0" class="ptxt" text-anchor="middle">BACK PLATE</text>
-<rect x="50.00" y="57.00" width="200.00" height="25.00" class="cut"/>
-<circle cx="60.00" cy="69.50" r="2.20" class="hole"/>
-<circle cx="90.00" cy="69.50" r="2.20" class="hole"/>
-<text x="150.0" y="69.5" class="ptxt" text-anchor="middle">HANDLE STRIP</text>
+<circle cx="150" cy="143.5" r="95" class="cut"/>
+<circle cx="150" cy="143.5" r="87" class="bc"/>
+<circle cx="150" cy="143.5" r="71.5" class="grv"/>
+<circle cx="150" cy="143.5" r="65" class="win"/>
+<circle cx="234.03" cy="166.02" r="2.2" class="hole"/><circle cx="211.52" cy="205.02" r="2.2" class="hole"/>
+<circle cx="172.52" cy="227.53" r="2.2" class="hole"/><circle cx="127.48" cy="227.53" r="2.2" class="hole"/>
+<circle cx="88.48" cy="205.02" r="2.2" class="hole"/><circle cx="65.97" cy="166.02" r="2.2" class="hole"/>
+<circle cx="65.97" cy="120.98" r="2.2" class="hole"/><circle cx="88.48" cy="81.98" r="2.2" class="hole"/>
+<circle cx="127.48" cy="59.47" r="2.2" class="hole"/><circle cx="172.52" cy="59.47" r="2.2" class="hole"/>
+<circle cx="211.52" cy="81.98" r="2.2" class="hole"/><circle cx="234.03" cy="120.98" r="2.2" class="hole"/>
+<text x="150" y="146" class="ptxt" text-anchor="middle">WINDOW PLATE</text>
+<rect x="50" y="250" width="200" height="25" class="cut"/>
+<circle cx="60" cy="262.5" r="2.2" class="hole"/><circle cx="90" cy="262.5" r="2.2" class="hole"/>
+<text x="175" y="266" class="ptxt" text-anchor="middle">HANDLE</text>
 </svg></div>
-      <div class="ndesc">Window + back plate + handle strip — one full sandwich carrier per sheet (immersion or seeding). <span class="util">sheet utilisation 59.8%</span></div>
+      <div class="ndesc">Window plate (⌀130 window + ⌀143 groove) + handle strip. <span class="util">util 38.7%</span></div>
+    </div>
+    <div class="nest">
+      <div class="nesthead"><span class="mat">¼″ PVDF · bed B</span><span class="file">ZnO_cut_PVDF_quarter.dxf</span></div>
+      <div class="svgwrap"><svg viewBox="-6 -6 312.0 299.0" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="300.0" height="287.0" class="sheet"/>
+<circle cx="150" cy="143.5" r="95" class="cut"/>
+<circle cx="150" cy="143.5" r="87" class="bc"/>
+<circle cx="150" cy="143.5" r="78.15" class="pkt"/>
+<circle cx="234.03" cy="166.02" r="1.7" class="hole"/><circle cx="211.52" cy="205.02" r="1.7" class="hole"/>
+<circle cx="172.52" cy="227.53" r="1.7" class="hole"/><circle cx="127.48" cy="227.53" r="1.7" class="hole"/>
+<circle cx="88.48" cy="205.02" r="1.7" class="hole"/><circle cx="65.97" cy="166.02" r="1.7" class="hole"/>
+<circle cx="65.97" cy="120.98" r="1.7" class="hole"/><circle cx="88.48" cy="81.98" r="1.7" class="hole"/>
+<circle cx="127.48" cy="59.47" r="1.7" class="hole"/><circle cx="172.52" cy="59.47" r="1.7" class="hole"/>
+<circle cx="211.52" cy="81.98" r="1.7" class="hole"/><circle cx="234.03" cy="120.98" r="1.7" class="hole"/>
+<circle cx="135" cy="217.5" r="1.7" class="hole"/><circle cx="165" cy="217.5" r="1.7" class="hole"/>
+<text x="150" y="146" class="ptxt" text-anchor="middle">BACK PLATE</text>
+</svg></div>
+      <div class="ndesc">Back / mask plate (⌀156.3 pocket + 2 handle taps). <span class="util">util 32.9%</span></div>
     </div>
     <div class="nest">
       <div class="nesthead"><span class="mat">½″ PP</span><span class="file">ZnO_cut_PP_half.dxf</span></div>
       <div class="svgwrap"><svg viewBox="-6 -6 312.0 299.0" xmlns="http://www.w3.org/2000/svg">
 <rect x="0" y="0" width="300.0" height="287.0" class="sheet"/>
-<rect x="4.00" y="117.00" width="140.00" height="166.00" class="cut"/>
-<rect x="30.50" y="144.00" width="87.00" height="112.00" class="grv"/>
-<rect x="24.00" y="137.50" width="100.00" height="125.00" class="pkt"/>
-<circle cx="14.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="134.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="14.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="134.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="14.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="14.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="134.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="134.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="74.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="74.00" cy="127.00" r="2.20" class="hole"/>
-<text x="74.0" y="200.0" class="ptxt" text-anchor="middle">STRIP BACKER</text>
-<rect x="156.00" y="117.00" width="140.00" height="166.00" class="cut"/>
-<rect x="182.50" y="144.00" width="87.00" height="112.00" class="grv"/>
-<rect x="176.00" y="137.50" width="100.00" height="125.00" class="pkt"/>
-<circle cx="166.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="286.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="166.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="286.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="166.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="166.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="286.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="286.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="226.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="226.00" cy="127.00" r="2.20" class="hole"/>
-<text x="226.0" y="200.0" class="ptxt" text-anchor="middle">STRIP BACKER</text>
+<circle cx="150" cy="143.5" r="95" class="cut"/>
+<circle cx="150" cy="143.5" r="87" class="bc"/>
+<circle cx="150" cy="143.5" r="78.15" class="pkt"/>
+<circle cx="150" cy="143.5" r="71.5" class="grv"/>
+<circle cx="234.03" cy="166.02" r="2.2" class="hole"/><circle cx="211.52" cy="205.02" r="2.2" class="hole"/>
+<circle cx="172.52" cy="227.53" r="2.2" class="hole"/><circle cx="127.48" cy="227.53" r="2.2" class="hole"/>
+<circle cx="88.48" cy="205.02" r="2.2" class="hole"/><circle cx="65.97" cy="166.02" r="2.2" class="hole"/>
+<circle cx="65.97" cy="120.98" r="2.2" class="hole"/><circle cx="88.48" cy="81.98" r="2.2" class="hole"/>
+<circle cx="127.48" cy="59.47" r="2.2" class="hole"/><circle cx="172.52" cy="59.47" r="2.2" class="hole"/>
+<circle cx="211.52" cy="81.98" r="2.2" class="hole"/><circle cx="234.03" cy="120.98" r="2.2" class="hole"/>
+<text x="150" y="146" class="ptxt" text-anchor="middle">STRIP BACKER</text>
 </svg></div>
-      <div class="ndesc">Two strip-carrier backer plates — two carriers per sheet. <span class="util">sheet utilisation 54.0%</span></div>
+      <div class="ndesc">Strip backer (⌀156.3 pocket + ⌀143 EPDM groove, solid). <span class="util">util 32.9%</span></div>
     </div>
     <div class="nest">
       <div class="nesthead"><span class="mat">⅜″ PP</span><span class="file">ZnO_cut_PP_threeEighth.dxf</span></div>
       <div class="svgwrap"><svg viewBox="-6 -6 312.0 299.0" xmlns="http://www.w3.org/2000/svg">
 <rect x="0" y="0" width="300.0" height="287.0" class="sheet"/>
-<rect x="4.00" y="117.00" width="140.00" height="166.00" class="cut"/>
-<rect x="37.00" y="150.50" width="74.00" height="99.00" class="win"/>
-<circle cx="14.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="134.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="14.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="134.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="14.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="14.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="134.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="134.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="74.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="74.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="59.00" cy="125.00" r="2.20" class="hole"/>
-<circle cx="89.00" cy="125.00" r="2.20" class="hole"/>
-<text x="74.0" y="200.0" class="ptxt" text-anchor="middle">CLAMP FRAME</text>
-<rect x="156.00" y="117.00" width="140.00" height="166.00" class="cut"/>
-<rect x="189.00" y="150.50" width="74.00" height="99.00" class="win"/>
-<circle cx="166.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="286.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="166.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="286.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="166.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="166.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="286.00" cy="224.33" r="2.20" class="hole"/>
-<circle cx="286.00" cy="175.67" r="2.20" class="hole"/>
-<circle cx="226.00" cy="273.00" r="2.20" class="hole"/>
-<circle cx="226.00" cy="127.00" r="2.20" class="hole"/>
-<circle cx="211.00" cy="125.00" r="2.20" class="hole"/>
-<circle cx="241.00" cy="125.00" r="2.20" class="hole"/>
-<text x="226.0" y="200.0" class="ptxt" text-anchor="middle">CLAMP FRAME</text>
+<circle cx="150" cy="143.5" r="95" class="cut"/>
+<circle cx="150" cy="143.5" r="87" class="bc"/>
+<circle cx="150" cy="143.5" r="65" class="win"/>
+<circle cx="234.03" cy="166.02" r="2.2" class="hole"/><circle cx="211.52" cy="205.02" r="2.2" class="hole"/>
+<circle cx="172.52" cy="227.53" r="2.2" class="hole"/><circle cx="127.48" cy="227.53" r="2.2" class="hole"/>
+<circle cx="88.48" cy="205.02" r="2.2" class="hole"/><circle cx="65.97" cy="166.02" r="2.2" class="hole"/>
+<circle cx="65.97" cy="120.98" r="2.2" class="hole"/><circle cx="88.48" cy="81.98" r="2.2" class="hole"/>
+<circle cx="127.48" cy="59.47" r="2.2" class="hole"/><circle cx="172.52" cy="59.47" r="2.2" class="hole"/>
+<circle cx="211.52" cy="81.98" r="2.2" class="hole"/><circle cx="234.03" cy="120.98" r="2.2" class="hole"/>
+<circle cx="135" cy="217.5" r="2.2" class="hole"/><circle cx="165" cy="217.5" r="2.2" class="hole"/>
+<text x="150" y="146" class="ptxt" text-anchor="middle">CLAMP FRAME</text>
 </svg></div>
-      <div class="ndesc">Two strip-carrier clamp frames — two carriers per sheet. <span class="util">sheet utilisation 54.0%</span></div>
-    </div></div>
+      <div class="ndesc">Strip clamp frame (⌀130 window + 2 handle mounts). <span class="util">util 32.9%</span></div>
+    </div>
+  </div>
   <p class="legend"><b>Layers in each DXF:</b>
     <span class="sw" style="border-top:1.3px solid #2c3a45"></span>CUT (outline)
     <span class="sw" style="border-top:1px solid #2c3a45"></span>WINDOW
-    <span class="sw" style="border-top:1px dashed #8a3b3b"></span>GROOVE (O-ring centreline)
+    <span class="sw" style="border-top:1px dashed #8a3b3b"></span>GROOVE (O-ring, ⌀143 circle)
     <span class="sw" style="border-top:1px dashed #7a8791"></span>POCKET
-    · DRILL (holes) · SHEET (bed outline).</p>
+    <span class="sw" style="border-top:1px dashed #b06d15"></span>bolt circle ref
+    · DRILL (holes) · SHEET (bed).</p>
 
   <h2>3 · Yield &amp; quantity</h2>
   <table>
-    <tr><th>Sheet</th><th>Yields (per sheet)</th><th>= carriers</th><th>Sheets for N carriers</th></tr>
-    <tr><td>¼″ PVDF</td><td>1 window + 1 back + 1 handle</td><td>1 sandwich carrier</td><td class="mono">N&nbsp;(immersion + seeding)</td></tr>
-    <tr><td>½″ PP</td><td>2 strip backers</td><td>2 strip carriers</td><td class="mono">⌈N/2⌉ (strip)</td></tr>
-    <tr><td>⅜″ PP</td><td>2 strip clamp frames</td><td>2 strip carriers</td><td class="mono">⌈N/2⌉ (strip)</td></tr>
+    <tr><th>Sheet</th><th>Yields (per sheet)</th><th>Sheets per carrier</th><th>Sheets for N carriers</th></tr>
+    <tr><td>¼″ PVDF</td><td>1 round plate (+ handle on bed A)</td><td>2 (window bed + back bed)</td><td class="mono">2N (immersion + seeding)</td></tr>
+    <tr><td>½″ PP</td><td>1 strip backer</td><td>1</td><td class="mono">N (strip)</td></tr>
+    <tr><td>⅜″ PP</td><td>1 strip clamp frame</td><td>1</td><td class="mono">N (strip)</td></tr>
   </table>
   <p class="lede"><b>Worked example — one full line</b> (2 immersion + 1 seeding + 1 strip):
-    3 × ¼″ PVDF sheets, 1 × ½″ PP sheet (holds 2 backers — one spare), 1 × ⅜″ PP sheet (2 frames — one spare).
-    For <b>M lines</b>: 3M PVDF, ⌈M/2⌉ each of ½″ and ⅜″ PP. Strip parts pair up two-per-sheet, so build strip carriers in even batches to avoid a half-used PP sheet.</p>
+    <b>6 × ¼″ PVDF</b> sheets (3 sandwich carriers × 2 beds each), <b>1 × ½″ PP</b> (1 backer), <b>1 × ⅜″ PP</b> (1 frame).
+    For <b>M lines</b>: 6M PVDF, M each of ½″ and ⅜″ PP. Since each round plate is one bed, sheet count scales linearly — batch cutting saves setup time, not sheets.</p>
 
   <h2>4 · Not nested (bought or one-off)</h2>
   <table>
     <tr><th>Item</th><th>Note</th></tr>
     <tr><td>PTFE standoff legs</td><td>bought spacers (2× 30 mm, 2× 18 mm per carrier)</td></tr>
-    <tr><td>O-ring cord</td><td>FKM (PVDF carriers) / EPDM (strip) — bought, spliced to the 87×112 loop</td></tr>
-    <tr><td>Bolts / nuts / springs</td><td>PVDF/PEEK/Ti — bought</td></tr>
-    <tr><td>Strip handle</td><td>PP or PTFE rod — bought (or route from ½″ PP leftover)</td></tr>
-    <tr><td>Bonding platen + clamp frame</td><td>single fixture — cut separately, not in the multiples nest; dimensioned in ZnO-DR-006 (ZnO_cut_platen_alum.dxf · ZnO_cut_frame_PVDF.dxf)</td></tr>
+    <tr><td>O-ring cord</td><td>FKM (PVDF carriers) / EPDM (strip) — bought, spliced to the ⌀143 ring (~46 cm, splice anywhere)</td></tr>
+    <tr><td>Bolts / nuts / springs</td><td>PVDF/PEEK/Ti — bought (12 per carrier)</td></tr>
+    <tr><td>Wafer bonding chuck</td><td>single fixture — cut separately (ZnO_cut_platen_alum.dxf); dimensioned in ZnO-DR-006. <b>ZnO_cut_frame_PVDF.dxf is retired</b> (no butyl mask).</td></tr>
   </table>
 
   <h2>5 · CAM notes for the DXF</h2>
   <table>
     <tr><th style="width:30%">Item</th><th>Note</th></tr>
-    <tr><td>Units / datum</td><td>Millimetres, origin at the sheet bottom-left (0,0); load with Y-up.</td></tr>
+    <tr><td>Units / datum</td><td>Millimetres, origin at the sheet bottom-left (0,0); load with Y-up. The PVDF file carries both beds side by side (bed B offset +330 in X).</td></tr>
     <tr><td>Layer → operation</td><td>CUT/WINDOW = profile through; DRILL = drill/tap; GROOVE = pocket to 1.1 mm depth; POCKET = 0.15 mm locating recess.</td></tr>
-    <tr><td>Groove corners</td><td>DXF groove is drawn square — apply <b>R ≥ 5 mm</b> fillets in CAM so the O-ring cord bends without kinking.</td></tr>
-    <tr><td>Hole sizes</td><td>⌀4.3 = M4 clearance; ⌀3.3 = M4 tap drill (tap after).</td></tr>
-    <tr><td>Order of ops</td><td>Pocket/groove → drill → windows → outer profile last (tabs or vacuum hold-down keep parts anchored).</td></tr>
-    <tr><td>Hold-down</td><td>Sheet fills the bed — use vacuum or perimeter tape; there is no waste frame to clamp.</td></tr>
+    <tr><td>Groove</td><td>Circular ⌀143 gland — no corner fillets to add. Route 2.1 wide × 1.1 deep.</td></tr>
+    <tr><td>Hole sizes</td><td>⌀4.3 = M4 clearance; ⌀3.3 = M4 tap drill (tap after, PVDF back plate only).</td></tr>
+    <tr><td>Order of ops</td><td>Pocket/groove → drill → windows → outer profile last (tabs or vacuum hold-down).</td></tr>
     <tr><td>PP tooling</td><td>Sharp single-flute; clear chips; PP is gummy but cuts clean at the right feed.</td></tr>
   </table>
 
-  <footer><span>ZnO-DR-004 · Rev 1.0</span><span>Carrier cut-file nesting · 300×287 bed</span><span>CC0 1.0 &middot; Croft Swonyoung</span></footer>
+  <footer><span>ZnO-DR-004 · Rev 2.0</span><span>Carrier cut-file nesting (round) · 300×287 bed</span><span>CC0 1.0 &middot; Croft Swonyoung</span></footer>
 </div></body></html>

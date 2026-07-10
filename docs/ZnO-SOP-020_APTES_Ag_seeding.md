@@ -12,8 +12,8 @@
 
 | Field | Value | Field | Value |
 |---|---|---|---|
-| Document no. | ZnO-SOP-020 | Revision | 2.0 |
-| Effective date | ____________ | Supersedes | Rev 1.0 |
+| Document no. | ZnO-SOP-020 | Revision | 2.1 |
+| Effective date | ____________ | Supersedes | Rev 2.0 |
 | Author | Croft Swonyoung | Approved by | ____________ |
 | Predecessor step | ZnO-SOP-010 (nanotip growth) | Next step | ZnO-SOP-030 (electroless Ni-P) |
 
@@ -25,7 +25,7 @@ This procedure functionalises grown ZnO nanotips with an aminosilane (APTES) mon
 
 **Process chain:** hydroxylate → vapour-phase APTES (amine groups) → AgNO₃ loading (Ag⁺ capture) → ascorbate reduction (Ag⁰ seeds) → hold under N₂ → electroless Ni-P (ZnO-SOP-030).
 
-**Substrate:** Zn foil, 70 µm × 100 mm × 125 mm, bearing ZnO nanotips on one face (reverse masked by the carrier), from ZnO-SOP-010.
+**Substrate:** Zn foil, **0.15 mm × ⌀156 round blank** (⌀130 active area inside a 13 mm rim), bearing ZnO nanotips on one face (reverse masked by the carrier), from ZnO-SOP-010.
 
 **Design intent:** amine density sets seed density sets Ni-P nucleation density, so silane quality carries the "densely packed" goal into the metal layer.
 
@@ -76,7 +76,7 @@ Any **bare zinc** contacting AgNO₃ will spontaneously cement silver and dissol
 - Sealed vapour chamber (glass desiccator or closed vessel) for APTES vapour deposition; small inert reservoir dish for the APTES liquid.
 - Hotplate capable of a stable ~110 °C cure (gentle ramp).
 - Amber glassware, PTFE-tipped tweezers, analytical balance (0.1 mg), timer, drying stand, pH paper/meter (reductant make-up check).
-- Substrate carrier that masks the reverse face.
+- Substrate carrier (round, per ZnO-DR-003) that masks the reverse face; amber glassware sized to accept the ⌀156 coupon.
 
 ---
 
@@ -125,7 +125,7 @@ Any **bare zinc** contacting AgNO₃ will spontaneously cement silver and dissol
 
 1. Place the substrates in the sealed chamber with a small open reservoir of ~200–300 µL APTES nearby. Liquid APTES must not contact the samples.
 2. Hold ~45–60 min at ~70 °C (optionally under mild vacuum to speed vapour transport), or leave at RT overnight.
-3. Remove and cure at ~110 °C for 20–30 min to condense the siloxane bonds (gentle ramp for the thin foil).
+3. Remove and cure at ~110 °C for 20–30 min to condense the siloxane bonds (gentle ramp; the 0.15 mm foil is stiffer/more forgiving than the old 70 µm stock, still far below the 419.5 °C Zn m.p.).
 4. Verify monolayer quality once before committing a batch (water contact-angle drop, or XPS nitrogen signal).
 
 ### 6.3 Silver loading — AgNO₃ (in the box, dim/amber light)
@@ -185,3 +185,4 @@ Any **bare zinc** contacting AgNO₃ will spontaneously cement silver and dissol
 |---|---|---|---|
 | 1.0 | __________ | ____________ | Initial release — vapour-phase APTES, AgNO₃ loading, DMAB reduction; AgCl rejected on solubility/compatibility grounds. |
 | 2.0 | __________ | ____________ | Lower-toxicity substitution: DMAB replaced by sodium ascorbate (10–50 mM, pH 6–7) — eliminates borane toxicity/off-gassing and the associated glovebox purge burden. Reduction time extended to minutes; free-acid neutralisation requirement and seed-morphology re-qualification gate added. |
+| 2.1 | __________ | Croft Swonyoung | Substrate updated to 0.15 mm zinc, ⌀156 round blank (⌀130 active) for the round wafer-scale set (was 70 µm × 100×125); round carrier + ⌀156-capable glassware noted. Seeding chemistry unchanged. |
