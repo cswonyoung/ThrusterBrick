@@ -1,7 +1,7 @@
 # Public Domain Dedication (CC0 1.0 Universal)
 
 **Author / Affirmer:** Croft Swonyoung
-**Work:** *ZnO Nanovoid Process* document set — 18 files (see `MANIFEST.md`)
+**Work:** *ZnO Nanovoid Process* document set — 20 files (see `MANIFEST.md`)
 **Dedication date:**   2026-07-09
 **Published from:**   United States
 

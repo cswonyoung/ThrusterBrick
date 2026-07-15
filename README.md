@@ -2,7 +2,7 @@
 
 **Author:** Croft Swonyoung
 **License:** CC0 1.0 Universal (public domain dedication) — see `LICENSE`
-**Contents:** 18 files (7 HTML references, 6 Markdown SOPs, 5 DXF cut files) — see `MANIFEST.md`
+**Contents:** 20 files (7 HTML references, 8 Markdown SOPs, 5 DXF cut files) — see `MANIFEST.md`
 
 To the extent possible under law, Croft Swonyoung has waived all copyright and
 related or neighbouring rights to every file in this set and dedicated them to
@@ -14,7 +14,7 @@ Archived on Zenodo: **10.5281/zenodo.21224278** —
 <https://doi.org/10.5281/zenodo.21224278>
 
 ## What's here
-- `docs/` — the 18 source documents. Each one carries the CC0 dedication and the
+- `docs/` — the 20 source documents. Each one carries the CC0 dedication and the
   author's name inline (a banner in the HTML/Markdown files; a comment header in
   the DXF cut files).
 - `LICENSE` — full CC0 1.0 legal code.
@@ -44,6 +44,12 @@ do not, by themselves, establish what net energy or other output the finished
 article produces. Anyone reproducing the work should measure inputs and outputs
 directly, with controls. Open publication under CC0 is what makes that
 independent verification possible.
+
+The set also includes two *application-integration* procedures — `ZnO-SOP-070`
+(a self-driven rotor) and `ZnO-SOP-080` (a staged flying-vehicle lift
+demonstrator). These describe **test rigs for measuring the hypothesised
+force**; both are written to be safe and informative whether or not any net
+force exists, and neither claims that it does.
 
 ## Background & attribution
 The tapered-nanocavity geometry in this process is motivated by:

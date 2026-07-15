@@ -12,8 +12,8 @@
 
 | Field | Value | Field | Value |
 |---|---|---|---|
-| Document no. | ZnO-SOP-060 | Revision | 3.2 |
-| Effective date | ____________ | Supersedes | Rev 3.1 |
+| Document no. | ZnO-SOP-060 | Revision | 3.3 |
+| Effective date | ____________ | Supersedes | Rev 3.2 |
 | Author | Croft Swonyoung | Approved by | ____________ |
 | Predecessor step | ZnO-SOP-050 (Phase-1 wafer-backed cells) | Next step | Final QC / packaging |
 | Variant | Common vacuum · conformal envelope · N cells (≤ 117) | — | — |
@@ -40,6 +40,8 @@ This procedure performs **Phase 2** of the assembly: **N** wafer-backed cells fr
 
 **Output:** a sealed, getter-maintained, common-vacuum N-cell wafer stack, atmospherically preloaded (§5 mass estimate).
 
+> **Ruggedization option (application-agnostic).** This procedure closes the brick **independent of its end use.** A unit that will see **in-service inertial loading at arbitrary orientation** — any dynamic application, e.g. a flying vehicle or the spinning generator rotor — takes two optional features: an inside-envelope silicone **edge-cushion** and an outboard **carrier pot**, sized to that application's design acceleration and specified in **Appendix A**. A **static / bench-measurement** brick omits both. Where a numeric g-load appears (e.g. "128 G"), "G" means multiples of standard gravity (acceleration), never grams.
+
 ---
 
 ## 2. Definitions and interpretation
@@ -53,7 +55,8 @@ This procedure performs **Phase 2** of the assembly: **N** wafer-backed cells fr
 - **End platens.** **1/8″ (3.175 mm) aluminium**, flat (MIC-6 tooling plate or surfaced flat), ⌀ ≥ the wafer (a small overhang shields the brittle wafer edges and anchors the bands). They spread the ~1 atm as uniform axial compression. **Clean/degreased** (they live in the vacuum). If flatness under load proves inadequate for a tall/heavy stack, step up to 1/4″. In the shiny-down build the **bottom platen bears on a polished Si face** and the **top platen on a working (void) face** — keep both platen faces clean and flat.
 - **Achievable vacuum (stated honestly).** Bench chamber-sealer + getter gives **rough-to-medium vacuum (~1–100 Pa), durable for years via the getter — not UHV.** At ≤~100 Pa the mean free path exceeds the void size (free-molecular): convection gone, gas effectively excluded.
 - **Getter.** General O₂ + H₂O + molecular-sieve (± NEG), **sized to N** (permeation through the envelope and internal outgassing — including the silicone bands and bonds — both scale with stack size), oversized for life, low-dust, restrained.
-- **Optional outboard structure.** For ruggedness / a defined external form, an optional **light rigid frame, end-caps, or thin shell** may be added **outboard of the envelope** (never contacting the stack) to help retain preload and protect the package. Keep it light — parasitic mass hurts the force-to-weight ratio the propulsion hypothesis cares about. A full **epoxy pot is possible but discouraged**: it must stay strictly outboard of the sealed envelope (epoxy in contact with the stack would wick into the contacts and voids and destroy the mechanism), and it adds substantial dead mass — a light frame beats a solid pot.
+- **Optional outboard structure.** For ruggedness / a defined external form, an optional **light rigid frame, end-caps, or thin shell** may be added **outboard of the envelope** (never contacting the stack) to help retain preload and protect the package. Keep it light — parasitic mass hurts the force-to-weight ratio the propulsion hypothesis cares about. A full **epoxy pot is possible but discouraged for a static / measurement package**: it must stay strictly outboard of the sealed envelope (epoxy in contact with the stack would wick into the contacts and voids and destroy the mechanism), and it adds substantial dead mass — a light frame beats a solid pot. **Exception — ruggedized (in-service) units:** a brick that must survive service inertial loads at arbitrary orientation (a flying vehicle, or — the bounding case — the 128 G generator rotor) *requires* a carrier pot, not merely an optional frame; the dead mass is unavoidable and is traded for survival. Ruggedization — the inside-envelope **edge-cushion** and the outboard **carrier pot**, both sized to the application's design acceleration — is specified in **Appendix A**.
+- **Edge-cushion frame (ruggedized variant, inside envelope).** For units that will see in-service inertial loading, a **pre-cured, die-cut platinum-silicone** cushion wraps the **wafer-stack rim** to protect the brittle wafer edges from dynamic, omnidirectional loads. **Pre-cured sheet only — never painted or dispensed:** liquid silicone would wick by capillary action into the contacts and voids and destroy the mechanism. It touches **only the wafer rim, outboard of the ⌀130 active region**, and is the **same low-outgassing class as the retaining bands** (ASTM E595), so it joins the getter's outgassing budget. Material, geometry, and placement in **Appendix A.1**.
 - **Fault tolerance (reduced, by design).** Common vacuum → one breach vents all. Mitigations: robust/defect-free envelope (optionally double-enveloped), generous getter margin, end platens that guard against the likeliest initiator (wafer fracture). Verify the failure mode is a **graceful** slow decay the getter buys time against, not a sudden collapse.
 - **No reheat over the stack.** Envelope heat-sealing is confined to the seam, away from the wafers, bands, and cured bonds.
 
@@ -80,6 +83,8 @@ This procedure performs **Phase 2** of the assembly: **N** wafer-backed cells fr
 - **1 × general getter assembly** — O₂ + H₂O + molecular sieve (± NEG), **sized to N**, oversized, low-dust, restrained.
 - **Metallized barrier laminate envelope stock**, heat-sealable (VIP grade); double-envelope stock if redundancy is specified.
 - Optional: **light outboard frame / end-caps / shell** (kept outboard of the envelope; see §2).
+- **(Ruggedized variant) 1 × pre-cured platinum-silicone edge-cushion set** — die-cut rim strip (+ optional recessed platen end-ring), ASTM E595 low-outgassing, **vacuum-baked before use**; see Appendix A.1. Add its outgassing to the getter sizing.
+- **(Ruggedized variant) Carrier / mould + filled low-exotherm potting epoxy** for the outboard pot; see Appendix A.2.
 
 ### 4.2 Equipment
 
@@ -99,11 +104,12 @@ This procedure performs **Phase 2** of the assembly: **N** wafer-backed cells fr
 | Inner interfaces | **mechanical contact only** — no bond, no gap, no seal | atmospheric-preloaded; nothing wicks into voids |
 | Preload | ~101 kPa uniform axial, **applied at the chamber vent (post-seal)** | via conformal envelope + aluminium end platens |
 | Assembly retention | 2–3 low-outgassing silicone bands + lateral registration | holds the loose cartridge through handling + pump-down only |
+| Edge-cushion (ruggedized variant) | pre-cured platinum silicone, **50 A, 1.0 mm**, E595, vacuum-baked; **rim wrap** | protects wafer edges under in-service loads; inside envelope, off the ⌀130 active area (App. A.1) |
 | End platens | 1/8″ (3.175 mm) aluminium, flat, clean; ⌀ ≥ wafer | spread the load; step to 1/4″ if flatness under load fails |
 | Vacuum | target **~1–100 Pa**, getter-maintained, durable years | rough–medium, **not UHV** (§2) |
 | Getter | general O₂/H₂O + molecular sieve (± NEG), **sized to N** | pumps permeation + outgassing (incl. bands/bonds) |
 | Envelope | metallized barrier laminate (VIP grade), continuous heat seal | sole hermetic boundary; optional double-envelope |
-| Outboard structure | optional light frame/shell, **outboard of envelope** | epoxy pot discouraged (dead mass; must not touch the stack) |
+| Outboard structure | optional light frame/shell, **outboard of envelope**; **carrier pot for the ruggedized variant** | epoxy pot discouraged for static/bench packages (dead mass); **required for in-service (dynamic) units, sized to the app's g-load (App. A.2)** — always outboard of the stack |
 | Fault mode | single common vacuum → one breach vents all | accepted trade; mitigations per §2 |
 | Target mass | ≈ N × 32 g active + platens + envelope/getter (**assumption-based**) | see note |
 
@@ -129,6 +135,7 @@ This procedure performs **Phase 2** of the assembly: **N** wafer-backed cells fr
 3. After each cell, confirm coaxial seating (no rock, no debris). Never slide a landed wafer.
 4. Land the top platen on the final cell.
 5. **Wrap 2–3 silicone retaining bands** over the top platen, down the sides, under the bottom platen (seated in the platen-edge notches), tensioned to hold the platen-stack-platen as one firm bundle — enough to handle, far below atmospheric preload. The stack is now a **cartridge**.
+6. **(Ruggedized variant only)** Fit the pre-cured silicone **edge-cushion rim strip** around the wafer-stack cylinder — over the wafer edges, between the platens, off the ⌀130 active faces — with the splice and vent-notches placed per Appendix A.1. Keep it clear of the retaining-band paths. It rides **under the envelope, inside the vacuum**. Static / bench units skip this step.
 
 ### 6.3 Getter placement
 
@@ -166,6 +173,8 @@ This procedure performs **Phase 2** of the assembly: **N** wafer-backed cells fr
 - **Platens / wafers:** platens flat and clean; no wafer cracks post-preload (inspection).
 - **Stack:** coaxial, flat, self-supporting; every working face fully seated on its neighbour's polished cap.
 - **Fault mode:** confirm (analysis or test) that an envelope breach produces a **graceful** vacuum decay, not a sudden collapse; document the single-point-failure acceptance.
+- **(Ruggedized variant) Edge-cushion:** seated over the full wafer-stack rim, off the ⌀130 active area, vent-notches clear; vacuum-baked lot recorded and added to the getter's outgassing budget (App. A.1).
+- **(Ruggedized variant) Carrier pot:** cured **void-free** (tap / CT if available), **strictly outboard of the envelope** (no epoxy ingress, seam intact), CoG within the application's balance/CoG budget; **only a §6.5-verified brick was potted** (the pot is permanent and hides the envelope) (App. A.2).
 
 ---
 
@@ -191,6 +200,91 @@ This procedure performs **Phase 2** of the assembly: **N** wafer-backed cells fr
 
 ---
 
+## Appendix A — Ruggedization for in-service (dynamic) applications (edge-cushion + carrier pot)
+
+**Scope — application-agnostic.** SOP-060 closes the brick **independent of end use**; this appendix adds the mechanical ruggedization a unit needs **only if it will experience in-service inertial loading at arbitrary orientation.** The trigger is the *service environment*, not a particular product. Current applications span the load range:
+
+| Application | Design accel. *a_d* | Orientation | Ruggedization |
+|---|---|---|---|
+| Static / bench / measurement package | ≈ 1 G, fixed | fixed | **None** (baseline brick; optional light frame per §2) |
+| Flying vehicle | modest (maneuver + vibration + landing shock) | omnidirectional | **Recommended,** sized to the vehicle's g-envelope |
+| Spinning generator rotor | **128 G steady**, sweeping every in-plane direction as the puck rotates on its own axis | omnidirectional | Required — **the bounding case** for current uses |
+
+Two additions do the work: **A.1** a pre-cured silicone **edge-cushion** *inside* the envelope; **A.2** an epoxy **carrier pot** *outboard* of the envelope. Both stay strictly clear of the working faces and voids — the cushion touches only the wafer rim (outboard of the ⌀130 active region); the pot never touches the stack (it encapsulates the *sealed envelope* only).
+
+**Size to your *a_d*.** The material spec below (50 A / 1.0 mm cushion; filled epoxy pot) is written to the **128 G bounding case**, so it is **conservative for any lighter application** — a flying unit may relax durometer, thickness, or pot mass if a load analysis supports it, but the baseline recipe is safe as-is.
+
+**Out of scope here** (separate, application-specific integration procedures): mounting / axles or airframe attachment, CoG-trim, bearings, containment, and any control or safety system particular to the end use. This appendix delivers a **ruggedized puck** plus its **carrier datum and CoG budget**, which the integration step consumes.
+
+### A.1 Edge-cushion silicone
+
+**Why pre-cured sheet, not painted/dispensed.** Uncured silicone has low enough viscosity to wick into micron-scale contacts and into the voids — destroying the mechanism this whole process exists to build. A **cured, die-cut sheet cannot wick.** This is not negotiable.
+
+**Material callout** (hand to a distributor as-is; same low-outgassing class as the retaining bands):
+
+| Property | Spec | Why |
+|---|---|---|
+| Chemistry | **Platinum (addition) cure**, solid (non-foam) | No tin catalyst, no volatile cure byproducts into the vacuum |
+| Durometer | **50 ± 5 Shore A** | Resists extrusion/creep under sustained in-service load, still spreads a silicon edge. 40 A if edges left sharp; 60 A if well-chamfered |
+| Thickness | **1.0 mm nominal (±0.1)** | Standoff without bulking the envelope; tight tolerance keeps the puck balanced. 1.5 mm if edges stay sharp |
+| Outgassing | **ASTM E595: TML ≤ 1.0 %, CVCM ≤ 0.10 %** | Sealed-vacuum requirement — demand the E595 data sheet |
+| Compression set | **ASTM D395-B, ≤ ~15 %** | So it does not take a permanent set under continuous load |
+| Temp range | **−50 to +200 °C min** | Covers the potting exotherm (A.2) and service |
+
+**Sources** (all carry platinum-cured sheet; confirm the E595 sheet): **Stockwell Elastomerics** (sheet + in-house die-cutting — single-vendor path), **Specialty Silicone Products (SSP)**, or **NuSil / Avantor** controlled-volatility (CV) grades for the cleanest outgassing.
+
+**Mandatory pre-conditioning.** **Vacuum-bake the cut parts before insertion** (≈200 °C, several hours, under vacuum) to drive out residual volatiles and absorbed moisture. Record the lot; add its outgassing area to the getter sizing (§2, §5).
+
+**Geometry — rim strip (primary) + optional recessed end-ring.** Dimensions parametric in wafer diameter **D = 150 mm**, silicone thickness **s = 1.0 mm**, and measured bonded-stack height **H** (cells only, platen-to-platen interior; H ≈ N × 0.78 mm → ≈ 91 mm at N = 117).
+
+- **Rim strip (primary).** One continuous 1.0 mm layer wrapping the wafer-stack cylinder — protecting every wafer edge at once.
+  - Width = **H** (matches the stack height).
+  - Length = **π (D + s) + 8 mm** splice overlap ≈ **π (151) + 8 ≈ 482 mm** at ⌀150.
+  - **Vent notches** (~1 × 2 mm, ×2–3) on an arc that will **not** be the primary load-bearing direction in service (for the rotor, the arc crossing the spin axis; for an omnidirectional or undefined load, keep the notches minimal and evenly spread) — so the main load-bearing arc stays fully covered while trapped gas still escapes during pump-down.
+- **End-face corners.** Handled first by the **aluminium platen overhang** already in the baseline design (§2). For extra margin, an **optional recessed silicone ring** — OD 150, **ID ≥ 134 mm** (stays outboard of the ⌀130 active region), 1.0 mm — may be seated in a **shallow relief groove machined into the platen face.**
+  - **Do NOT stack a proud ring in the axial load path.** At only ~101 kPa preload a 1 mm 50 A ring will not compress and would hold the platen off the wafer centre, breaking the zero-gap contact the SOP depends on. Recess it flush, or omit it and rely on the platen overhang.
+
+```
+   Cross-section (vertical slice through the spin axis):
+
+      |<--------------------- D = 150 --------------------->|
+       _____________________________________________________
+      |   platen overhang (+ optional recessed ring in groove)  |
+      |_____________________________________________________|
+     ||                                                     ||
+  R  ||                 wafer stack  (H ≈ 91 @ N=117)       ||  R   ] rim strip
+  I  ||          contact interfaces — no gap, no cushion    ||  I     1.0 mm, wraps
+  M  ||                    between cells                    ||  M     the cylinder
+     ||_____________________________________________________||
+      |   platen overhang (+ optional recessed ring in groove)  |
+      |_____________________________________________________|
+       ^                                                   ^
+     rim strip on the load-bearing rim (fore/aft arcs full;
+     vent notches only on the top/bottom arcs)
+```
+
+**Edge dressing.** The strip is the belt; a **chamfer / dressed edge on the wafers** is the suspenders — under sustained load a sharp silicon corner can cold-flow into the silicone and concentrate stress on a line. With N up to 117 stacked edges the load concentrates, so chamfer where practical or step the strip to 1.5 mm.
+
+**Placement in flow:** fit the rim strip in **§6.2 step 6**, after banding and before enclosing (§6.4). It rides under the envelope, inside the vacuum, and also serves as the compliant **CTE-decoupling layer** between the silicon and the rigid pot (A.2).
+
+### A.2 Carrier pot (outboard)
+
+**Purpose.** Rigidize the flexible brick into a **puck** that survives its service g-load at any angle and carries the application's mounting datum. This **overrides the baseline "epoxy pot discouraged" stance** (§2), which is for static/measurement packages where dead mass hurts force-to-weight; an in-service unit needs the pot and the mass is unavoidable.
+
+**Rules.**
+1. **Strictly outboard of the sealed, vented envelope.** The pot encapsulates the *finished brick* (post-§6.5); epoxy never contacts the stack, contacts, or voids.
+2. **Pot into a defined carrier / thin-wall mould** so external geometry, mass, and CoG are predictable and the shell carries the mounting features (the datum the application-integration step consumes).
+3. **Epoxy = silica/alumina-filled, low-exotherm, slow cure.** The **envelope heat-seal is the thermal weak point** — keep peak exotherm well below its rating; pour in **thin lifts**, heat-sink the mould, **cure cool**.
+4. **Vacuum-degas the resin.** Voids are stress concentrators under service loads and shift the CoG unpredictably.
+
+**Procedure.**
+1. Confirm the brick passed **§6.5** (preload present, seam sound, decay baseline recorded). **Only pot a verified brick** — the pot is permanent and hides the envelope.
+2. Prepare the carrier/mould; place the brick with its **thrust axis (shiny-down) indexed to the carrier datum.**
+3. Pour degassed, filled, low-exotherm epoxy in **thin lifts**; degas between lifts; cure cool.
+4. Post-cure per the resin data sheet; verify **void-free** (tap test / CT if available) and **CoG within the application's balance/CoG budget.** Hand off to the application-integration procedure.
+
+---
+
 ## 10. Revision history
 
 | Rev | Date | Author | Change summary |
@@ -203,3 +297,4 @@ This procedure performs **Phase 2** of the assembly: **N** wafer-backed cells fr
 | 3.0 | ____ | ____ | **Architecture change: zero-gap common-vacuum stack.** N₂ fill, spacers/gap, butyl seals retired; working face contacts the neighbour's polished Si; hermetic duty in a single metallized barrier envelope; atmospheric preload via end platens; general getter; single-point-failure stated. |
 | 3.2 | ____ | Croft Swonyoung | **Corrected cell orientation: polished (shiny) Si face DOWN for every cell** (was working-face-down). The hypothesised thrust is toward the polished-Si side, so shiny-down makes any always-on thrust *self-seat* each cell during assembly instead of lifting it off ("popping up"); the finished stack's thrust axis is toward the shiny faces (down as built). Updated the repeat-unit, governing rules, build procedure (§6.2), specs, platen note, and troubleshooting. |
 | 3.1 | ____ | Croft Swonyoung | **Parameterised cell count N** (recommended ≤ 117; per-cell pitch/mass basis; height/force-to-weight guidance). Added the **plain-language "vacuum-packed brick"** description. Specified the **assembly cartridge** (lateral registration + **2–3 low-outgassing silicone retaining bands**) and corrected the procedure to the **chamber pump → seal → vent** sequence, making explicit that **atmospheric preload appears only at the vent** (gentle initial pump; keep vertical). End platens defined as **1/8″ aluminium** (flat, clean; 1/4″ fallback). Getter sized to N; optional light **outboard structure** noted (epoxy pot discouraged — dead mass, must not touch the stack). |
+| 3.3 | ____ | Croft Swonyoung | **Added application-agnostic ruggedization variant (Appendix A).** An optional inside-envelope **pre-cured platinum-silicone edge-cushion** (rim strip; 50 A / 1.0 mm / ASTM E595; vacuum-baked; sized into the getter budget; **cured sheet only — no wicking**) protecting the wafer rim outboard of the ⌀130 active area, plus an outboard **filled low-exotherm epoxy carrier pot** (strictly outboard of the sealed envelope; low-exotherm to protect the seal; degassed, void-free, CoG-controlled). Added **only for units that see in-service inertial loading at arbitrary orientation** (e.g. a flying vehicle, or the 128 G generator rotor as the *bounding* case) and **sized to the application's design acceleration**; static/bench bricks omit both. Cushion spec written to the 128 G bounding case (conservative for lighter apps). Corrected the earlier three-piece cushion concept to a **rim strip + optional recessed platen end-ring** (a proud end-ring would break the atmospheric preload path). Reconciled the "epoxy pot discouraged" stance: still discouraged for static/measurement packages, **required** for in-service units. Added hooks in §1, §2, §4, §5, §6.2 (step 6), §7; "G" defined as acceleration to avoid clash with grams. |

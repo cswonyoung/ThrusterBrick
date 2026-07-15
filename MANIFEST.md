@@ -1,6 +1,6 @@
 # Manifest — ZnO Nanovoid Process document set
 
-All 18 files are dedicated to the public domain under CC0 1.0 (see `LICENSE`).
+All 20 files are dedicated to the public domain under CC0 1.0 (see `LICENSE`).
 
 | # | File | Description |
 |---|------|-------------|
@@ -15,10 +15,12 @@ All 18 files are dedicated to the public domain under CC0 1.0 (see `LICENSE`).
 | 9 | `ZnO-SOP-030_electroless_NiP_plating.md` | SOP-030 electroless Ni-P plating |
 | 10 | `ZnO-SOP-040_caustic_strip_clean_dry.md` | SOP-040 caustic strip / bulk clean / dry |
 | 11 | `ZnO-SOP-050_phase1_wafer_bond_rim_trim.md` | SOP-050 Phase-1 wafer die-attach, chemical de-rim & final clean |
-| 12 | `ZnO-SOP-060_phase2_vacuum_stack_close.md` | SOP-060 Phase-2 common-vacuum stack close |
-| 13 | `ZnO-SP-001_consolidated_shop_packet.html` | Consolidated shop packet |
-| 14 | `ZnO_cut_PP_half.dxf` | Cut file — 1/2 in PP (strip backer, round) |
-| 15 | `ZnO_cut_PP_threeEighth.dxf` | Cut file — 3/8 in PP (strip clamp frame, round) |
-| 16 | `ZnO_cut_PVDF_quarter.dxf` | Cut file — 1/4 in PVDF (immersion/seeding carrier, round) |
-| 17 | `ZnO_cut_frame_PVDF.dxf` | Cut file — PVDF clamp frame (RETIRED — no butyl mask) |
-| 18 | `ZnO_cut_platen_alum.dxf` | Cut file — aluminium wafer bonding chuck |
+| 12 | `ZnO-SOP-060_phase2_vacuum_stack_close.md` | SOP-060 Phase-2 common-vacuum stack close (+ App. A application-agnostic ruggedization variant) |
+| 13 | `ZnO-SOP-070_rotor_generator_integration.md` | SOP-070 Rotor integration & commissioning (self-driven rotor / thrust-hypothesis test) |
+| 14 | `ZnO-SOP-080_flying_vehicle_integration.md` | SOP-080 Flying-vehicle integration (staged lift demonstrator) |
+| 15 | `ZnO-SP-001_consolidated_shop_packet.html` | Consolidated shop packet |
+| 16 | `ZnO_cut_PP_half.dxf` | Cut file — 1/2 in PP (strip backer, round) |
+| 17 | `ZnO_cut_PP_threeEighth.dxf` | Cut file — 3/8 in PP (strip clamp frame, round) |
+| 18 | `ZnO_cut_PVDF_quarter.dxf` | Cut file — 1/4 in PVDF (immersion/seeding carrier, round) |
+| 19 | `ZnO_cut_frame_PVDF.dxf` | Cut file — PVDF clamp frame (RETIRED — no butyl mask) |
+| 20 | `ZnO_cut_platen_alum.dxf` | Cut file — aluminium wafer bonding chuck |
