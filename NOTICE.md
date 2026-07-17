@@ -1,8 +1,8 @@
 # Public Domain Dedication (CC0 1.0 Universal)
 
 **Author / Affirmer:** Croft Swonyoung
-**Work:** *ZnO Nanovoid Process* document set — 20 files (see `MANIFEST.md`)
-**Dedication date:**   2026-07-09
+**Work:** *ZnO Nanovoid Process* document set — 150 mm rotor line (19 files, complete) + 300 mm flight line (in progress); see `MANIFEST.md`
+**Dedication date:**   2026-07-17
 **Published from:**   United States
 
 To the extent possible under law, **Croft Swonyoung** has waived all copyright

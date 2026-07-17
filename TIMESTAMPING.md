@@ -17,7 +17,7 @@ sha256sum -c CHECKSUMS.sha256
 ```
 
 ## What has already been done (offline)
-- SHA-256 computed for all 20 documents + the metadata files → `CHECKSUMS.sha256`.
+- SHA-256 computed for every file in both document directories (`docs-rotor/`, `docs-flight/`) + the metadata files → `CHECKSUMS.sha256`.
 - This machine has **no network access**, so the blockchain anchoring step below
   has NOT been performed yet. It is one command on any online machine. Nothing
   about the anchor depends on this machine; the manifest is the whole input.

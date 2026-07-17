@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carrier &amp; Bath Design Reference (300 mm) — ZnO-DR-001-300</title>
+<style>
+  :root{
+    --ink:#1c2733; --steel:#345f78; --steel2:#5b8299; --rule:#cdd7de;
+    --ground:#f3f7f9; --wash:#e9f0f4; --amber:#c9791b; --paper:#fff;
+    --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+    --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#dfe6ea;color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .sheet{max-width:940px;margin:28px auto;background:var(--paper);padding:44px 52px 60px;
+    box-shadow:0 1px 3px rgba(0,0,0,.14),0 8px 30px rgba(20,40,55,.10)}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--steel2)}
+  h1{font-size:27px;line-height:1.15;font-weight:650;margin:.35em 0 .1em;letter-spacing:-.01em}
+  .sub{font-size:15px;color:#40525f;margin:0 0 20px;font-weight:450}
+  h2{font-size:13px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--steel);
+    margin:34px 0 12px;padding-bottom:7px;border-bottom:1.5px solid var(--steel)}
+  h3{font-size:14.5px;margin:22px 0 6px;font-weight:600;color:var(--ink)}
+  p{margin:.5em 0}
+  hr.hair{border:0;border-top:1px solid var(--rule);margin:0}
+  table{border-collapse:collapse;width:100%;font-size:12.5px;margin:8px 0 4px}
+  th,td{border:1px solid var(--rule);padding:6px 9px;text-align:left;vertical-align:top}
+  th{background:var(--wash);font-family:var(--mono);font-size:11px;letter-spacing:.03em;font-weight:600;color:#2c4658}
+  td.mono,.mono{font-family:var(--mono);font-size:11.5px}
+  tbody tr:nth-child(even) td{background:#f7fafb}
+  .ctrl{display:grid;grid-template-columns:auto 1fr auto 1fr;gap:0;border:1px solid var(--rule);margin:6px 0 8px;font-size:12px}
+  .ctrl div{padding:5px 9px;border-bottom:1px solid var(--rule)}
+  .ctrl .k{background:var(--wash);font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:#3a5668}
+  .ctrl div:nth-last-child(-n+4){border-bottom:0}
+  .lede{color:#3c4e5b}
+  .amberkey{display:inline-block;width:26px;height:0;border-top:2.5px solid var(--amber);vertical-align:middle;margin:0 5px}
+  .figs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px}
+  .fig{border:1px solid var(--rule);background:var(--paper)}
+  .fig svg{display:block;width:100%;height:auto;background:var(--ground);border-bottom:1px solid var(--rule)}
+  .fig .cap{padding:9px 12px 11px}
+  .fig .cap .t{font-weight:650;font-size:13px}
+  .fig .cap .s{font-family:var(--mono);font-size:10.5px;color:var(--steel);letter-spacing:.03em;margin-top:2px;text-transform:uppercase}
+  .fig .cap .d{font-size:12px;color:#41535f;margin-top:5px}
+  .revnote{border:1px solid var(--rule);border-left:4px solid var(--amber);background:var(--ground);padding:11px 14px;margin:14px 0 4px;font-size:12.5px;color:#2c4658}
+  .caveat{border:1px solid var(--rule);border-left:4px solid var(--steel);background:var(--wash);padding:9px 13px;margin:8px 0 12px;font-size:12px;color:#2c4658}
+  /* shared SVG element classes */
+  .d-vessel{fill:#9aa0a6;stroke:#6b7075;stroke-width:1}
+  .d-liquid{fill:#dcebf6}
+  .d-carrier{fill:#4f7d68}
+  .d-foil{fill:#8a9199;stroke:#5c626a;stroke-width:.5}
+  .d-work{stroke:var(--amber);stroke-width:3;fill:none;stroke-linecap:round}
+  .d-al{fill:#b9c0c7;stroke:#7e858c;stroke-width:.5}
+  .d-sil{fill:#d9a441}
+  .d-stir{fill:#3a4048}
+  .d-leader{stroke:#9aa7b0;stroke-width:.75;stroke-dasharray:3 2;fill:none}
+  .d-h2{fill:#cfe0ec;stroke:#8fb4cf;stroke-width:.5}
+  .d-lbl{font:500 10.5px var(--mono);fill:#1c2733}
+  .d-lbla{font:650 10.5px var(--mono);fill:#a2620f}
+  .d-note{font:600 10px var(--mono);fill:#345f78;letter-spacing:.06em}
+  footer{margin-top:34px;padding-top:12px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:10.5px;color:#6a7883;display:flex;justify-content:space-between}
+  @media (max-width:760px){.sheet{padding:26px 20px}.figs{grid-template-columns:1fr}.ctrl{grid-template-columns:auto 1fr}}
+  @media print{body{background:#fff}.sheet{box-shadow:none;margin:0;max-width:none}}
+</style>
+</head>
+<body>
+<div style="max-width:960px;margin:20px auto 0;padding:11px 16px;border:1px solid #cdd7de;border-left:4px solid #c9791b;background:#f3f7f9;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;line-height:1.5;color:#2c4658"><strong style="letter-spacing:.05em;text-transform:uppercase;color:#345f78">Public Domain &middot; CC0 1.0 Universal</strong> &mdash; Author: <strong>Croft Swonyoung</strong>. To the extent possible under law, the author has waived all copyright and related or neighbouring rights to this document and dedicates it to the public domain worldwide. No warranty. <a href="https://creativecommons.org/publicdomain/zero/1.0/" style="color:#345f78">https://creativecommons.org/publicdomain/zero/1.0/</a></div>
+
+<!-- shared arrowhead -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+<path d="M2 2 L8 5 L2 8" fill="none" stroke="#345f78" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</marker></defs></svg>
+
+<div class="sheet">
+  <div class="eyebrow">ZnO Nanovoid Process · Fabrication Reference · 300 mm Flying Line</div>
+  <h1>Carrier &amp; Bath Design Reference (300 mm)</h1>
+  <p class="sub">Foil / station flow, handling and orientation, carrier construction, and single-use bath layout — 300 mm scale-up</p>
+
+  <div class="ctrl">
+    <div class="k">Document no.</div><div class="mono">ZnO-DR-001-300</div>
+    <div class="k">Revision</div><div class="mono">1.0</div>
+    <div class="k">Complements</div><div class="mono">SOP-010-300 … SOP-060-300</div>
+    <div class="k">Effective</div><div class="mono">____________</div>
+    <div class="k">Author</div><div class="mono">____________</div>
+    <div class="k">Approved</div><div class="mono">____________</div>
+  </div>
+
+  <div class="revnote"><b>Rev 1.0 — 300 mm scale-up.</b> Derived from the 150 mm <b>ZnO-DR-001 Rev 2.0</b> by scaling the wafer ⌀150 → ⌀300. What changed is geometry and volume only: the coupon (zinc blank ⌀156 → ⌀306, active ⌀130 → ⌀280), the shared carrier plate (outer ⌀190 → ⌀350, window ⌀130 → ⌀280, O-ring ⌀143 → ⌀296, pocket ⌀156.3 → ⌀306.3, bolt circle ⌀174 ×12 → ⌀330 ×16 M4), and single-use bath/vessel volumes, which scale with area (~4×). <b>Design intent, handling principles, orientation logic, chemistry, and per-litre bath loadings are unchanged.</b> The 13 mm handling rim, 0.15 mm zinc, and 25 µm Ni-P are diameter-independent and carry over. Authoritative dimensions are this document's tables and <span class="mono">300mm-datum-reference.md</span>; the SVG schematics are illustrative only.</div>
+
+  <h2>1 · Purpose</h2>
+  <p class="lede">This reference fixes the handling, foil orientation, carrier construction, and bath layout across the 300 mm process line. It captures three principles that emerged during design: dedicated fixtures per chemistry (so no seeded, silver-bearing carrier ever enters a nickel bath, and no nickel- or caustic-fouled carrier returns to a clean step); the working face is gripped only by edges and the intact zinc backbone, never touched directly; and baths are single-use, so vessels are rectangular and volume-minimised to cut reagent and waste.</p>
+  <p><span class="amberkey"></span><b>Amber</b> marks the working face (the mid-P void surface) in every drawing, so orientation is readable at a glance.</p>
+
+  <h2>2 · Handling principles</h2>
+  <table>
+    <tr><th style="width:34%">Principle</th><th>Consequence</th></tr>
+    <tr><td>Isolate chemistries</td><td>A dedicated carrier per chemistry; the key switch is seeding → plating (keep nickel out of the Ag-seeded fixture).</td></tr>
+    <tr><td>Never touch the working face</td><td>Grip edges and, until the strip, the rigid zinc backbone; after the strip, grip the stiff zinc rim.</td></tr>
+    <tr><td>Orientation follows the step</td><td>Face-down / tilted in every immersion/deposition bath (particles fall away); face-up for dry line-of-sight steps and the final lay-down.</td></tr>
+    <tr><td>Single-use, minimal volume</td><td>Rectangular vessels sized to the coupon + carrier + ~10–15&nbsp;mm clearance; ~2–3&nbsp;L per charge on a stir-hotplate (~4× the 150 mm charge).</td></tr>
+    <tr><td>Grab-and-go handle</td><td>Each immersion carrier carries a handle that stays above the liquid; it doubles as a drain/hang point.</td></tr>
+  </table>
+
+  <h2>3 · Foil / station flow</h2>
+  <table>
+    <tr><th>#</th><th>Station</th><th>Face</th><th>Carrier</th><th>Agitation</th><th>Transfer note</th></tr>
+    <tr><td class="mono">1</td><td>Degrease (acetone→IPA→DI)</td><td>n/a bare Zn</td><td>utility basket</td><td>ultrasonic</td><td>bare Zn robust</td></tr>
+    <tr><td class="mono">2</td><td>HCl light etch + rinse</td><td>dip</td><td>growth carrier</td><td>none</td><td>mount to growth carrier</td></tr>
+    <tr><td class="mono">3</td><td>ZnO growth (90 °C, depletion)</td><td>down/tilted, back masked</td><td>Immersion (growth)</td><td><b>static</b></td><td>grip edge/back, not tips</td></tr>
+    <tr><td class="mono">4</td><td>Hydroxylation (UV-ozone/plasma)</td><td>up</td><td>seeding carrier</td><td>dry</td><td>line-of-sight from above</td></tr>
+    <tr><td class="mono">5</td><td>APTES vapour + cure (110 °C)</td><td>up</td><td>seeding carrier</td><td>dry</td><td>chamber → hotplate</td></tr>
+    <tr><td class="mono">6</td><td>Ag load (AgNO₃, dark)</td><td>down/tilted</td><td>seeding carrier</td><td>gentle</td><td>amber light</td></tr>
+    <tr><td class="mono">7</td><td>DMAB reduce → rinse/dry</td><td>down/tilted</td><td>seeding carrier</td><td>gentle</td><td><b>switch → plating carrier</b></td></tr>
+    <tr><td class="mono">8</td><td>Plating 1 (mid-P, 65–70 °C)</td><td>down/tilted, masked</td><td>Immersion (plating)</td><td><b>mild — stir bar</b></td><td>keep Ni out of seeded fixture</td></tr>
+    <tr><td class="mono">9</td><td>Plating 2 (high-P, 85–90 °C)</td><td>down/tilted</td><td>Immersion (plating)</td><td><b>mild</b></td><td>rinse between baths</td></tr>
+    <tr><td class="mono">10</td><td>NaOH strip (45 °C)</td><td>zinc/work face to bath, high-P backed</td><td>Strip edge-clamp</td><td><b>mild–mod — stir bar</b></td><td>preserve 13 mm rim</td></tr>
+    <tr><td class="mono">11</td><td>Rinse / solvent-exchange / dry</td><td>same</td><td>Strip edge-clamp</td><td>cascade/gentle</td><td>now rim-framed</td></tr>
+    <tr><td class="mono">12</td><td>Die-attach to Si wafer + trim rim</td><td>void up, high-P down</td><td>wafer chuck</td><td>none</td><td>grip stiff zinc rim</td></tr>
+  </table>
+  <p class="lede" style="font-size:12px"><b>Substrate:</b> 0.15 mm zinc foil, round <b>⌀306</b> blank; the etch defines a <b>⌀280</b> active circle inside a 13 mm handling rim, to back a 300 mm silicon wafer (ZnO-SOP-050-300 / ZnO-SOP-060-300; per <span class="mono">300mm-datum-reference.md</span> §1).</p>
+
+  <h2>4 · Carrier designs — three, plus a platen</h2>
+  <table>
+    <tr><th>Design</th><th>Instances</th><th>Stations</th><th>Key features</th><th>Material</th></tr>
+    <tr><td><b>1 · Immersion process</b></td><td>2 dedicated (growth, plating)</td><td>3; 8–9</td><td>handle above liquid; standoff legs over a stir-bar zone; back-mask gasket; frames the ⌀306 coupon</td><td>PVDF body (PP ok for growth); <b>FKM/Viton or PTFE gasket — never silicone</b></td></tr>
+    <tr><td><b>2 · Seeding</b></td><td>1</td><td>4–7</td><td>110 °C-rated; fits plasma chamber / vapour desiccator / hotplate; <b>no bare metal</b> (would reduce Ag)</td><td>PVDF, PTFE, or PEEK</td></tr>
+    <tr><td><b>3 · Strip edge-clamp</b></td><td>1</td><td>10–11</td><td>edge clamp preserving the 13 mm rim; high-P backed; standoff for stir</td><td>PP / PTFE / PVDF or passivated SS; <b>Ti or all-plastic springs; no Al, no glass</b></td></tr>
+    <tr><td><i>(Wafer chuck)</i></td><td>1</td><td>12</td><td>flat, level vacuum chuck holding a 300 mm wafer polished-face-down on a clean pad; not immersion (detailed in ZnO-DR-006-300)</td><td>½″ MIC-6 Al, surfaced flat in place; compliant silicone-free chuck pad</td></tr>
+  </table>
+  <p class="lede">Growth and plating share <b>design #1</b> as two physically separate units (the growth unit simply never receives a stir bar). Net: <b>three carrier designs plus a wafer bonding chuck.</b> The shared carrier plate that carries these features (outer ⌀350, window ⌀280, O-ring groove ⌀296, coupon pocket ⌀306.3 × 0.15 mm deep, bolt circle ⌀330 ×16 M4) is fixed by <span class="mono">300mm-datum-reference.md</span> §3 and detailed in ZnO-DR-006-300; all plastic parts cut on the same 500 × 600 mm bed, ~1 carrier plate per sheet.</p>
+
+  <h2>5 · Bath &amp; vessel</h2>
+  <table>
+    <tr><th>Parameter</th><th>Spec</th><th>Note</th></tr>
+    <tr><td>Vessel form</td><td>rectangular/round, single-use</td><td>sized to the ⌀306 coupon + carrier + 10–15 mm clearance (~⌀380 or 380 mm square)</td></tr>
+    <tr><td>Charge volume</td><td>~4.0–6.0 L</td><td>~4× the 150 mm charge (area-scaled); larger vessels and longer fill, but still far below a beaker fill</td></tr>
+    <tr><td>Heat + agitation</td><td>magnetic stir-hotplate</td><td>one tool: heat and stir bar from below (larger hotplate / bar for the ⌀380 vessel)</td></tr>
+    <tr><td>Standoff</td><td>legs lift face-down foil above the bar</td><td>upward/cross flow sweeps the working face</td></tr>
+    <tr><td>Growth</td><td>static (no bar)</td><td>depletion run; do not disturb</td></tr>
+    <tr><td>Plating</td><td>mild stir</td><td>uniformity; periodic skim rather than in-line filter in a small charge</td></tr>
+    <tr><td>Strip</td><td>mild–moderate stir</td><td>sweeps early H₂; drives fresh solution into diffusion-limited voids</td></tr>
+  </table>
+  <p class="lede" style="font-size:12px">Bath volumes and reagent charges scale with active area (~4×) per <span class="mono">300mm-datum-reference.md</span> §4; <b>per-litre loadings and bath chemistry are unchanged from the 150 mm line.</b></p>
+
+  <h2>6 · Material cautions</h2>
+  <table>
+    <tr><th style="width:32%">Rule</th><th>Why</th></tr>
+    <tr><td>Gaskets: FKM/Viton or PTFE — never silicone</td><td>a silicone gasket sheds contamination onto the working face and later outgasses inside the sealed common-vacuum stack (ZnO-SOP-060-300)</td></tr>
+    <tr><td>Plating carrier: non-catalytic plastic, silver-free</td><td>electroless Ni plates only the foil, not the fixture; no stray silver drag-in</td></tr>
+    <tr><td>Strip carrier: no aluminium, no glass</td><td>both are attacked by hot NaOH (Al dissolves; glass slowly etches)</td></tr>
+    <tr><td>Seeding carrier: no bare metal</td><td>reactive metal would reduce/consume the silver bath</td></tr>
+  </table>
+
+  <h2>7 · Station drawings <span style="font-family:var(--mono);font-size:11px;font-weight:400;color:var(--steel2);text-transform:none;letter-spacing:0">— side-section schematics, working face in amber</span></h2>
+  <div class="caveat"><b>Schematic — not to scale;</b> cut geometry to be regenerated with the 300 mm DXF cut set. Authoritative dimensions: this document's tables + <span class="mono">300mm-datum-reference.md</span>. The drawings below are carried over unscaled from the 150 mm reference to show orientation and flow only.</div>
+  <div class="figs">
+
+    <!-- A · GROWTH -->
+    <div class="fig">
+      <svg viewBox="0 0 360 250" role="img" aria-label="Growth station: face-down foil, static bath, handle above liquid">
+        <rect class="d-vessel" x="40" y="70" width="12" height="150"/><rect class="d-vessel" x="308" y="70" width="12" height="150"/><rect class="d-vessel" x="40" y="208" width="280" height="12"/>
+        <rect class="d-liquid" x="52" y="100" width="256" height="108"/>
+        <line class="d-leader" x1="52" y1="100" x2="308" y2="100"/>
+        <circle class="d-carrier" cx="180" cy="36" r="7"/><rect class="d-carrier" x="176" y="42" width="8" height="106"/>
+        <rect class="d-carrier" x="92" y="148" width="176" height="8"/>
+        <rect class="d-carrier" x="108" y="164" width="5" height="44"/><rect class="d-carrier" x="242" y="158" width="5" height="50"/>
+        <polygon class="d-foil" points="100,168 250,158 250,164 100,174"/>
+        <line class="d-work" x1="100" y1="174" x2="250" y2="164"/>
+        <text class="d-lbl" x="196" y="40">handle (above liquid)</text>
+        <text class="d-lbla" x="104" y="192">working face ↓</text>
+        <line class="d-leader" x1="130" y1="188" x2="150" y2="171"/>
+        <text class="d-lbl" x="196" y="150">back masked ↑</text>
+        <line class="d-leader" x1="230" y1="146" x2="200" y2="161"/>
+        <text class="d-note" x="180" y="238" text-anchor="middle">STATIC — NO STIR BAR</text>
+      </svg>
+      <div class="cap"><div class="t">A · ZnO growth</div><div class="s">Immersion carrier · station 3</div>
+        <div class="d">Face-down/tilted, back masked; static depletion bath; grab handle proud of the liquid.</div></div>
+    </div>
+
+    <!-- B · PLATING -->
+    <div class="fig">
+      <svg viewBox="0 0 360 250" role="img" aria-label="Plating station: face-down foil over a magnetic stir bar">
+        <rect class="d-vessel" x="40" y="70" width="12" height="150"/><rect class="d-vessel" x="308" y="70" width="12" height="150"/><rect class="d-vessel" x="40" y="208" width="280" height="12"/>
+        <rect class="d-liquid" x="52" y="100" width="256" height="108"/>
+        <line class="d-leader" x1="52" y1="100" x2="308" y2="100"/>
+        <circle class="d-carrier" cx="180" cy="36" r="7"/><rect class="d-carrier" x="176" y="42" width="8" height="98"/>
+        <rect class="d-carrier" x="92" y="140" width="176" height="8"/>
+        <rect class="d-carrier" x="108" y="156" width="5" height="40"/><rect class="d-carrier" x="242" y="150" width="5" height="46"/>
+        <polygon class="d-foil" points="100,160 250,150 250,156 100,166"/>
+        <line class="d-work" x1="100" y1="166" x2="250" y2="156"/>
+        <rect class="d-stir" x="158" y="198" width="44" height="8" rx="4"/>
+        <path class="d-arrow" d="M150 194 A18 10 0 0 1 210 194" marker-end="url(#ah)"/>
+        <text class="d-lbla" x="104" y="184">working face ↓</text>
+        <line class="d-leader" x1="130" y1="180" x2="150" y2="163"/>
+        <text class="d-lbl" x="212" y="204">stir bar</text>
+        <text class="d-lbl" x="196" y="40">handle (above liquid)</text>
+        <text class="d-note" x="180" y="238" text-anchor="middle">MILD STIR · STANDOFF CLEARS BAR</text>
+      </svg>
+      <div class="cap"><div class="t">B · Electroless Ni-P (1 &amp; 2)</div><div class="s">Immersion carrier · stations 8–9</div>
+        <div class="d">Face-down; standoff legs lift the foil above a stir bar for mild, uniform agitation.</div></div>
+    </div>
+
+    <!-- C · SEEDING DRY -->
+    <div class="fig">
+      <svg viewBox="0 0 360 250" role="img" aria-label="Dry seeding steps: face-up foil, downward UV/plasma/vapour, no bath">
+        <rect x="40" y="44" width="280" height="176" fill="none" stroke="#9aa7b0" stroke-width="1" stroke-dasharray="5 4"/>
+        <text class="d-note" x="50" y="60">SEALED / DRY CHAMBER</text>
+        <line class="d-arrow" x1="120" y1="74" x2="120" y2="150" marker-end="url(#ah)"/>
+        <line class="d-arrow" x1="180" y1="74" x2="180" y2="150" marker-end="url(#ah)"/>
+        <line class="d-arrow" x1="240" y1="74" x2="240" y2="150" marker-end="url(#ah)"/>
+        <rect class="d-carrier" x="92" y="176" width="176" height="8"/>
+        <rect class="d-carrier" x="108" y="184" width="5" height="20"/><rect class="d-carrier" x="242" y="184" width="5" height="20"/>
+        <polygon class="d-foil" points="100,170 250,170 250,176 100,176"/>
+        <line class="d-work" x1="100" y1="170" x2="250" y2="170"/>
+        <text class="d-lbla" x="150" y="200" text-anchor="middle">working face ↑</text>
+        <text class="d-lbl" x="180" y="92" text-anchor="middle">UV-ozone · plasma · APTES vapour</text>
+        <text class="d-note" x="180" y="214" text-anchor="middle">DRY — NO BATH</text>
+      </svg>
+      <div class="cap"><div class="t">C · Hydroxylation &amp; APTES</div><div class="s">Seeding carrier · stations 4–5</div>
+        <div class="d">Face-up for line-of-sight dry treatment and vapour deposition; cure on a hotplate in the same carrier.</div></div>
+    </div>
+
+    <!-- D · SEEDING WET -->
+    <div class="fig">
+      <svg viewBox="0 0 360 250" role="img" aria-label="Wet seeding: face-down foil in a shallow bath, amber light">
+        <rect class="d-vessel" x="40" y="120" width="12" height="100"/><rect class="d-vessel" x="308" y="120" width="12" height="100"/><rect class="d-vessel" x="40" y="208" width="280" height="12"/>
+        <rect class="d-liquid" x="52" y="140" width="256" height="68"/>
+        <line class="d-leader" x1="52" y1="140" x2="308" y2="140"/>
+        <circle class="d-carrier" cx="180" cy="44" r="7"/><rect class="d-carrier" x="176" y="50" width="8" height="112"/>
+        <rect class="d-carrier" x="100" y="162" width="160" height="8"/>
+        <rect class="d-carrier" x="112" y="178" width="5" height="30"/><rect class="d-carrier" x="238" y="172" width="5" height="36"/>
+        <polygon class="d-foil" points="104,182 250,172 250,178 104,188"/>
+        <line class="d-work" x1="104" y1="188" x2="250" y2="178"/>
+        <text class="d-lbla" x="108" y="204">working face ↓</text>
+        <line class="d-leader" x1="134" y1="200" x2="152" y2="185"/>
+        <text class="d-lbl" x="196" y="48">handle</text>
+        <text class="d-note" x="180" y="234" text-anchor="middle">AMBER LIGHT · GENTLE · Ag → DMAB</text>
+      </svg>
+      <div class="cap"><div class="t">D · Silver load &amp; reduce</div><div class="s">Seeding carrier · stations 6–7</div>
+        <div class="d">Same carrier, now face-down in a shallow bath under amber light; gentle agitation only.</div></div>
+    </div>
+
+    <!-- E · STRIP -->
+    <div class="fig">
+      <svg viewBox="0 0 360 250" role="img" aria-label="Caustic strip: zinc face up to bath, high-P backed below, edge clamp, stir bar">
+        <rect class="d-vessel" x="40" y="70" width="12" height="150"/><rect class="d-vessel" x="308" y="70" width="12" height="150"/><rect class="d-vessel" x="40" y="208" width="280" height="12"/>
+        <rect class="d-liquid" x="52" y="100" width="256" height="108"/>
+        <line class="d-leader" x1="52" y1="100" x2="308" y2="100"/>
+        <circle class="d-carrier" cx="180" cy="36" r="7"/><rect class="d-carrier" x="176" y="42" width="8" height="96"/>
+        <!-- backer tray under foil -->
+        <rect class="d-carrier" x="96" y="146" width="168" height="9"/>
+        <rect class="d-carrier" x="110" y="155" width="5" height="53"/><rect class="d-carrier" x="240" y="155" width="5" height="53"/>
+        <!-- foil sits on tray: high-P down, zinc/work face up -->
+        <rect class="d-foil" x="104" y="140" width="152" height="6"/>
+        <line class="d-work" x1="104" y1="140" x2="256" y2="140"/>
+        <!-- edge clamps on the rim -->
+        <rect class="d-stir" x="100" y="136" width="10" height="10"/><rect class="d-stir" x="250" y="136" width="10" height="10"/>
+        <!-- H2 bubbles rising off top face -->
+        <circle class="d-h2" cx="140" cy="126" r="3"/><circle class="d-h2" cx="150" cy="116" r="2"/><circle class="d-h2" cx="200" cy="128" r="2.6"/><circle class="d-h2" cx="212" cy="115" r="2"/><circle class="d-h2" cx="176" cy="120" r="2.4"/>
+        <rect class="d-stir" x="158" y="198" width="44" height="8" rx="4"/>
+        <path class="d-arrow" d="M150 194 A18 10 0 0 1 210 194" marker-end="url(#ah)"/>
+        <text class="d-lbla" x="150" y="176" text-anchor="middle">zinc / working face ↑ to bath</text>
+        <text class="d-lbl" x="60" y="132">high-P backed ↓</text>
+        <text class="d-lbl" x="264" y="140">clamp (13 mm rim)</text>
+        <text class="d-lbl" x="200" y="107">H₂ ↑</text>
+        <text class="d-note" x="180" y="238" text-anchor="middle">STIR → VOIDS · NO Al · NO GLASS</text>
+      </svg>
+      <div class="cap"><div class="t">E · NaOH strip</div><div class="s">Strip edge-clamp · stations 10–11</div>
+        <div class="d">Zinc/working face up so H₂ escapes; high-P face backed below; edge clamp preserves the 13 mm rim.</div></div>
+    </div>
+
+    <!-- F · BONDING -->
+    <div class="fig">
+      <svg viewBox="0 0 360 250" role="img" aria-label="Die-attach: foil laid onto a silicone-wetted silicon wafer rough side, void up, not pressed">
+        <rect class="d-vessel" x="40" y="196" width="280" height="20"/>
+        <rect class="d-al" x="76" y="188" width="208" height="6" style="fill:#e7ded0;stroke:#b7a888"/>
+        <rect class="d-al" x="70" y="180" width="220" height="8" style="fill:#c9d3da"/>
+        <rect class="d-sil" x="72" y="174" width="216" height="6"/>
+        <!-- foil mid lay-down: left edge on silicone, right edge lifted; void face up -->
+        <polygon class="d-foil" points="80,168 210,168 250,140 120,140"/>
+        <line class="d-work" x1="120" y1="140" x2="250" y2="140"/>
+        <!-- rim frame (thicker ends) -->
+        <rect class="d-stir" x="76" y="166" width="10" height="6"/>
+        <path class="d-arrow" d="M262 120 Q250 150 214 166" marker-end="url(#ah)"/>
+        <text class="d-lbl" x="266" y="118">lay from one edge</text>
+        <text class="d-lbla" x="130" y="132">void face ↑</text>
+        <text class="d-lbl" x="70" y="152">high-P → silicone</text>
+        <text class="d-lbl" x="292" y="186">Si wafer (rough ↑)</text>
+        <line class="d-leader" x1="290" y1="184" x2="270" y2="184"/>
+        <text class="d-lbl" x="30" y="230">wafer chuck (polished ↓ on pad)</text>
+        <text class="d-note" x="200" y="234" text-anchor="middle">LAY — DON'T PRESS · TRIM RIM AFTER CURE</text>
+      </svg>
+      <div class="cap"><div class="t">F · Die-attach + trim</div><div class="s">Wafer chuck · station 12</div>
+        <div class="d">Low-outgassing silicone on the wafer's rough (up) side; the rim-framed foil laid on high-P-down, void-up, never pressed; rim trimmed after cure. Polished wafer face stays down and clean.</div></div>
+    </div>
+
+  </div>
+
+  <h2>8 · Summary</h2>
+  <p class="lede">Three carrier designs cover the line — an <b>immersion process carrier</b> (built as two dedicated units for growth and plating), a <b>seeding carrier</b>, and a <b>strip edge-clamp carrier</b> — plus a flat <b>wafer bonding chuck</b> that is not a carrier. At 300 mm every fixture frames the ⌀306 coupon / ⌀280 active region, and all baths are single-use, volume-minimised (~4–6 L) on stir-hotplates; growth runs static, plating and strip run stirred via a bar beneath the standoff. The working face is amber in every drawing and is never contacted directly: face-down in the wet baths, face-up for the dry and die-attach steps.</p>
+
+  <h2>9 · Open items (verify while detailing the carriers)</h2>
+  <table>
+    <tr><th style="width:40%">Item</th><th>Check</th></tr>
+    <tr><td>Rim stiffness</td><td>Does the unetched 13 mm zinc rim tension the etched ⌀280 centre through transfer? At 300 mm the etched span is larger, so front-side support is the more likely fallback.</td></tr>
+    <tr><td>Clamp seal line</td><td>Does the clamp keep the rim fully unetched at exactly 13 mm so etch boundary = seal border?</td></tr>
+    <tr><td>Strip orientation</td><td>Confirm face-up strip (H₂ escape) vs the backing/solution-access trade for your carrier.</td></tr>
+    <tr><td>Standoff vs gap</td><td>Standoff height clears the stir bar without excessive bath depth (volume) in the larger ⌀380 vessel.</td></tr>
+    <tr><td>Vessel &amp; bed fit</td><td>Confirm the ~⌀380 single-use vessel and the ⌀350 carrier plate both fit the 500 × 600 mm bed / bench with clamp margin (per datum §3).</td></tr>
+  </table>
+
+  <footer><span>ZnO-DR-001-300 · Rev 1.0</span><span>Carrier &amp; Bath Design Reference (300 mm)</span><span>CC0 1.0 &middot; Croft Swonyoung</span></footer>
+</div>
+</body>
+</html>

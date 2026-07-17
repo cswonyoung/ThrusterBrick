@@ -5,6 +5,15 @@
 
 ---
 
+> 🚧 **SEED — 150 mm-based, needs 300 mm re-derivation.** This procedure was moved
+> from the 150 mm line and still references the 150 mm ruggedized-puck handoff and
+> masses. In this **300 mm flying-machine** set it must be re-derived against the
+> 300 mm puck (per-cell ≈140 g, larger active area) and its `[TBD]` fields
+> (per-puck thrust, vehicle mass, thrust-to-weight) completed. See
+> `300mm-re-derivation-plan.md` (this directory). Do not treat as final.
+
+---
+
 # Working Procedure & Specification
 
 ## Flying-Vehicle Integration — staged lift demonstrator (thrust-to-weight hypothesis)

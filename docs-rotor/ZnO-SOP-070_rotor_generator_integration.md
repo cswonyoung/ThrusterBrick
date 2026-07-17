@@ -44,7 +44,7 @@ This procedure integrates **ruggedized pucks** (ZnO-SOP-060 Appendix A — potte
 
 > **Thrust units (avoid the classic slip).** The goal is **50 lbf ≈ 222 N** — note **1 lbf ≈ 4.45 N, *not* ≈1 N**. At 18″/500 rpm that gives τ ≈ 102 N·m and **P ≈ 5.3 kW**, the intended ~5 kW target. (An earlier "50 N" figure was the lbf→N slip; 50 N at this geometry would deliver only ≈1.2 kW.)
 
-**Out of scope:** puck fabrication and ruggedization (ZnO-SOP-010…060); detailed electrical design of the generator/PTO and load (referenced, not specified); the flying-vehicle application (ZnO-SOP-080).
+**Out of scope:** puck fabrication and ruggedization (ZnO-SOP-010…060); detailed electrical design of the generator/PTO and load (referenced, not specified); the flying-vehicle application (the 300 mm line in `../docs-flight/`).
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Author:** Croft Swonyoung
 **License:** CC0 1.0 Universal (public domain dedication) — see `LICENSE`
-**Contents:** 20 files (7 HTML references, 8 Markdown SOPs, 5 DXF cut files) — see `MANIFEST.md`
+**Contents:** two application lines in one set — `docs-rotor/` (150 mm rotor/generator, 19 files, complete) and `docs-flight/` (300 mm flying machine, under construction). See `MANIFEST.md`.
 
 To the extent possible under law, Croft Swonyoung has waived all copyright and
 related or neighbouring rights to every file in this set and dedicated them to
@@ -14,12 +14,15 @@ Archived on Zenodo: **10.5281/zenodo.21224278** —
 <https://doi.org/10.5281/zenodo.21224278>
 
 ## What's here
-- `docs/` — the 20 source documents. Each one carries the CC0 dedication and the
-  author's name inline (a banner in the HTML/Markdown files; a comment header in
-  the DXF cut files).
+- `docs-rotor/` — the 150 mm **rotor / generator** line (19 documents, complete).
+- `docs-flight/` — the 300 mm **flying-machine** line (under construction; a
+  re-derivation plan + a seed integration SOP so far). Every document in both
+  directories carries the CC0 dedication and the author's name inline (a banner in
+  the HTML/Markdown files; a comment header in the DXF cut files).
 - `LICENSE` — full CC0 1.0 legal code.
 - `NOTICE.md` — short human-readable dedication + a note on patents/prior art.
 - `MANIFEST.md` — the file list with descriptions.
+- `CHANGELOG.md` — version history (what changed in each release).
 - `CHECKSUMS.sha256` — SHA-256 of every file (integrity + the timestamping anchor).
 - `TIMESTAMPING.md` — how the dated proof works and the one command to create it.
 - `UPLOAD-CHECKLIST.md` — step-by-step durable-publication guide.
@@ -45,11 +48,16 @@ article produces. Anyone reproducing the work should measure inputs and outputs
 directly, with controls. Open publication under CC0 is what makes that
 independent verification possible.
 
-The set also includes two *application-integration* procedures — `ZnO-SOP-070`
-(a self-driven rotor) and `ZnO-SOP-080` (a staged flying-vehicle lift
-demonstrator). These describe **test rigs for measuring the hypothesised
-force**; both are written to be safe and informative whether or not any net
-force exists, and neither claims that it does.
+This set covers **two end-use lines** built from the same fabrication chemistry:
+- **`docs-rotor/` — 150 mm rotor / generator line** (complete). Includes an
+  application-integration procedure, `ZnO-SOP-070` (a self-driven rotor test rig).
+- **`docs-flight/` — 300 mm flying-machine line** (under construction). The wafer
+  size cascades through the whole fabrication chain, so this line is re-derived on
+  its own datum — see `docs-flight/300mm-re-derivation-plan.md`.
+
+The integration procedures describe **test rigs for measuring the hypothesised
+force**, written to be safe and informative whether or not any net force exists,
+and claiming nothing.
 
 ## Background & attribution
 The tapered-nanocavity geometry in this process is motivated by:

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-15.0 -15.0 390.0 390.0" style="width:100%;height:auto;max-width:760px;font-family:sans-serif" role="img" aria-label="ZnO wafer bonding chuck (300 mm) — aluminium — to-scale plan (generated from 300mm-datum-reference.md)">
+<title>ZnO wafer bonding chuck (300 mm) — aluminium</title>
+<rect x="0.00" y="0.00" width="360.00" height="360.00" fill="none" stroke="#b0b0b0" stroke-width="0.56" stroke-dasharray="3.3,2.2"/>
+<circle cx="180.000" cy="180.000" r="170.000" fill="none" stroke="#0050c8" stroke-width="0.56"/>
+<circle cx="180.000" cy="180.000" r="150.250" fill="none" stroke="#008000" stroke-width="0.56"/>
+<circle cx="180.000" cy="180.000" r="120.000" fill="none" stroke="#c00000" stroke-width="0.56"/>
+<circle cx="180.000" cy="180.000" r="60.000" fill="none" stroke="#c00000" stroke-width="0.56"/>
+<line x1="60.000" y1="180.000" x2="300.000" y2="180.000" stroke="#c00000" stroke-width="0.56"/>
+<line x1="180.000" y1="300.000" x2="180.000" y2="60.000" stroke="#c00000" stroke-width="0.56"/>
+<circle cx="180.000" cy="180.000" r="2.500" fill="none" stroke="#d07000" stroke-width="0.56"/>
+<circle cx="289.602" cy="70.398" r="2.100" fill="none" stroke="#a000a0" stroke-width="0.56"/>
+<circle cx="70.398" cy="70.398" r="2.100" fill="none" stroke="#a000a0" stroke-width="0.56"/>
+<circle cx="70.398" cy="289.602" r="2.100" fill="none" stroke="#a000a0" stroke-width="0.56"/>
+<circle cx="289.602" cy="289.602" r="2.100" fill="none" stroke="#a000a0" stroke-width="0.56"/>
+<text x="0.0" y="-4.6" font-size="8.7" fill="#222">ZnO wafer bonding chuck (300 mm) — aluminium</text>
+<text x="0.0" y="5.8" font-size="6.2" fill="#555">to-scale (mm) · CUT ⌀340.0 · POCKET ⌀300.5 · GROOVE ⌀240.0</text>
+</svg>
