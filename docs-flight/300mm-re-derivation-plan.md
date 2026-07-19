@@ -6,6 +6,10 @@ established 150 mm rotor line (`../docs-rotor/`) in this same repository. The
 tooling, bath scale, and mass. Numbers below are **scaled estimates to confirm**,
 not final — decisions the maker must lock are flagged **[DECIDE]**.
 
+> **Tracking note:** the 150 mm line is a moving target — when a rotor-line SOP
+> revs, the corresponding `-300` doc must track it (e.g. the **ZnO seed layer**
+> added at 150 mm Rev 3.0 was carried into `ZnO-SOP-010-300` Rev 1.1; see §2).
+
 ## 1. Datum change (150 mm → 300 mm)
 
 | Parameter | 150 mm (current) | 300 mm (proposed) | Note |
@@ -25,7 +29,13 @@ not final — decisions the maker must lock are flagged **[DECIDE]**.
 
 **Fabrication chain (re-derive each at the new datum):**
 - **SOP-010** (ZnO growth) — ⌀306 zinc blank; bath volume ~4× (vessel ⌀360–400+);
-  growth chemistry unchanged, immersion geometry scaled.
+  growth chemistry unchanged, immersion geometry scaled. **Done through Rev 1.1**,
+  which tracks the 150 mm Rev 3.0 **ZnO seed layer** (zinc-acetate coat + 300 °C
+  anneal, replacing bare-foil self-seeding for c-axis-vertical uniformity): recipe
+  identical at both scales; what scales at 300 mm is the handling — ~10–15 mL per
+  flood coat, a ≥ ⌀320 anneal plate with **oven preferred** over a hotplate for
+  edge-to-edge temperature, and centre-to-edge seed-tint QC. No acid contact after
+  seeding (ZnO dissolves in weak acids).
 - **SOP-020** (APTES + Ag seed) — seeding carrier scaled to ⌀306; glovebox/vapour
   chamber must clear the larger coupon; reagent volumes ~4×.
 - **SOP-030** (electroless Ni-P) — bath ~4× (~6–10 L; vessel ⌀360–400+); plating

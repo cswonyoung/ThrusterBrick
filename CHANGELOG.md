@@ -5,6 +5,31 @@ to the public domain under CC0 1.0 (see `LICENSE`). Versions follow the git tags
 the Zenodo **concept DOI** `10.5281/zenodo.21224278` always resolves to the
 latest published version.
 
+## [2.3]— 2026-07-19
+
+### Changed — ZnO seed layer added to the growth SOPs (both lines)
+`ZnO-SOP-010` (150 mm, → **Rev 3.0**) and `ZnO-SOP-010-300` (300 mm, → **Rev 1.1**)
+gain a **ZnO seed layer** ahead of hydrothermal growth: 5 mM zinc acetate dihydrate
+in absolute ethanol, 3–5 flood coats (ethanol rinse each), annealed 300 ± 25 °C /
+20–30 min in air. The zinc-acetate-derived nanocrystal seeds carry a (0001)-up
+texture, decoupling rod orientation from the rolled foil's random grain
+orientations — targeting a c-axis-vertical array with a tighter size and tilt
+distribution than the previous self-seeded (bare-foil) nucleation. Title changes
+from *Self-Seeded* to *Seeded*; the acetic light etch is retained as surface prep
+with a hard rule of **no acid contact after seeding** (ZnO dissolves in weak
+acids). Seeded runs re-enter first-run calibration: the same 10 mM depletion
+charge split across more rods trends denser/shorter/thinner. Naming discipline:
+"ZnO seed layer" (SOP-010) vs. "silver seeding" (SOP-020) — different steps.
+
+Propagated through the set: the **shop packets** `ZnO-SP-001` (→ **Rev 2.1**) and
+`ZnO-SP-001-300` (→ **Rev 1.1**) carry the seed layer at routing op 10 (gate now
+includes seed-tint uniformity and tilt), the document index revs, the growth
+station (300 °C seed anneal; flat Al anneal plate — ≥ ⌀320 with oven preferred at
+300 mm), purchasing (zinc acetate dihydrate + absolute ethanol), and open item O3
+(first seeded run resets the growth baseline). `300mm-re-derivation-plan.md`
+notes the carry-over and the rule that `-300` docs track rotor-line SOP revs.
+`CHECKSUMS.sha256` regenerated for all revised files.
+
 ## [2.2] — 2026-07-17
 
 Builds on the released **v2.1** (2026-07-15). The rotor-line ruggedization and the

@@ -44,7 +44,7 @@
 
   <div class="ctrl">
     <div class="k">Document no.</div><div class="mono">ZnO-SP-001</div>
-    <div class="k">Revision</div><div class="mono">2.0</div>
+    <div class="k">Revision</div><div class="mono">2.1</div>
     <div class="k">Product</div><div class="mono">N-cell common-vacuum wafer stack (N ≤ 117)</div>
     <div class="k">Coupon</div><div class="mono">⌀156 round Zn blank, 0.15 mm (⌀130 active)</div>
     <div class="k">Author</div><div class="mono">____________</div>
@@ -52,6 +52,8 @@
   </div>
 
   <div class="rule3 hold"><b>Rev 2.0 — architecture change.</b> This line now builds a <b>silicon-wafer-backed, zero-gap, common-vacuum</b> stack (ZnO-SOP-050 Rev 4.0 / SOP-060 Rev 3.0), replacing the N₂-filled, spacer-gapped, butyl-sealed stack of Rev 1.0. Butyl, aluminium plates/spacers, the two-phase silicone/butyl separation, the PTFE film mask, and the N₂ glovebox close are all <b>retired</b>. Release-pass items (manifest, checksums, README, filename normalization, mirrors) are still pending.</div>
+
+  <div class="rule3"><b>Rev 2.1 — ZnO seed layer at op 10.</b> SOP-010 (now Rev 3.0) adds a <b>ZnO seed layer</b> between the acetic light etch and growth: 5 mM zinc acetate dihydrate in absolute ethanol, 3–5 flood coats (ethanol rinse each), annealed 300 ± 25 °C / 20–30 min in air — replacing bare-foil self-seeding so the array grows c-axis vertical with a tight size/tilt distribution, independent of foil grain orientation. <b>No acid touches the foil after seeding</b> (ZnO dissolves in weak acids). Naming discipline: "<b>ZnO seed layer</b>" (op 10) vs "<b>silver seeding</b>" (op 20) — different steps, never interchangeable.</div>
 
   <h2>1 · Governing principles (read first)</h2>
   <div class="rule3"><b>Vacuum, not fill.</b> The finished stack shares <b>one common vacuum</b> inside a single hermetic metallized-barrier envelope, held for life by a getter. The seal carries a permanent ~1 atm (~101 kPa) differential, so the hermetic duty lives <i>entirely</i> in the outer envelope — no inner interface is a pressure boundary. Achievable vacuum is rough–medium (~1–100 Pa), not UHV.</div>
@@ -62,7 +64,7 @@
   <h2>2 · Master routing — one coupon, growth to sealed stack</h2>
   <table>
     <tr><th>Op</th><th>Station / document</th><th>What happens</th><th>Fixture</th><th>Gate</th></tr>
-    <tr><td class="mono">10</td><td>SOP-010 · Fume hood A</td><td>Degrease → acetic light etch → 10 mM depletion ZnO growth on ⌀156 / 0.15 mm Zn → rinse/dry</td><td>Immersion carrier (growth), round</td><td>SEM: base 70–120 nm, ht &lt;300 nm, taper, dense, vertical</td></tr>
+    <tr><td class="mono">10</td><td>SOP-010 · Fume hood A</td><td>Degrease → acetic light etch → <b>ZnO seed layer</b> (5 mM Zn-acetate/EtOH ×3–5 coats → 300 °C anneal; <b>no acid after</b>) → 10 mM depletion ZnO growth on ⌀156 / 0.15 mm Zn → rinse/dry</td><td>Immersion carrier (growth), round; flat Al anneal plate &gt;⌀156</td><td>Seed tint uniform; SEM: base 70–120 nm, ht &lt;300 nm, taper, dense, vertical, tilt tight</td></tr>
     <tr><td class="mono">20</td><td>SOP-020 · Glovebox train</td><td>UV-ozone → vapour APTES + cure → AgNO₃ load → ascorbate reduce</td><td>Seeding carrier, round</td><td>Ag dispersion on tips; no cemented Ag on edges</td></tr>
     <tr><td class="mono">30</td><td>SOP-030 · Fume hood B</td><td>Mid-P strike (65–70 °C, pH 6.5–7) → <span class="gate">HOLD: pinhole-free cover</span> → high-P bulk (85–90 °C, pH 4.5–5) to 25 µm</td><td>Immersion carrier (plating), round</td><td>25 µm; P: ~5–8 % / ~10–12 %</td></tr>
     <tr><td class="mono">40</td><td>SOP-040 · Fume hood C</td><td>NaOH strip (Zn + ZnO out — void clearing) → <b>bulk</b> rinse to neutral → gentle baseline dry (deep-void clean deferred to op 50)</td><td>Strip edge-clamp carrier, round</td><td><span class="gate">HOLD: voids clear (SEM/EDS)</span>; rim intact; bulk rinse neutral; bath refreshed for ~4× Zn load</td></tr>
@@ -85,7 +87,7 @@
   <h2>4 · Document index</h2>
   <table>
     <tr><th>Doc</th><th>Title</th><th>Rev</th><th>File</th></tr>
-    <tr><td class="mono">ZnO-SOP-010</td><td>ZnO nanotip growth — 10 mM depletion (acetic light etch); ⌀156 / 0.15 mm Zn blank</td><td class="mono">2.2</td><td class="mono">ZnO-SOP-010_nanotip_growth_10mM_depletion.md</td></tr>
+    <tr><td class="mono">ZnO-SOP-010</td><td>ZnO nanotip growth — 10 mM depletion (acetic light etch · ZnO seed layer); ⌀156 / 0.15 mm Zn blank</td><td class="mono">3.0</td><td class="mono">ZnO-SOP-010_nanotip_growth_10mM_depletion.md</td></tr>
     <tr><td class="mono">ZnO-SOP-020</td><td>APTES functionalisation &amp; silver seeding (vapour APTES · AgNO₃ · ascorbate)</td><td class="mono">2.1</td><td class="mono">ZnO-SOP-020_APTES_Ag_seeding.md</td></tr>
     <tr><td class="mono">ZnO-SOP-030</td><td>Two-step electroless Ni-P — mid-P strike + high-P bulk, 25 µm</td><td class="mono">2.1</td><td class="mono">ZnO-SOP-030_electroless_NiP_plating.md</td></tr>
     <tr><td class="mono">ZnO-SOP-040</td><td>Caustic strip &amp; bulk clean/dry — rim-framed release (0.15 mm Zn; deep-void clean deferred to SOP-050)</td><td class="mono">1.3</td><td class="mono">ZnO-SOP-040_caustic_strip_clean_dry.md</td></tr>
@@ -105,7 +107,7 @@
   <h2>5 · Stations &amp; fixtures</h2>
   <table>
     <tr><th>Station</th><th>Environment</th><th>Fixture</th><th>Body / seal</th></tr>
-    <tr><td>Fume hood A — growth</td><td>vented, 90 °C</td><td>Immersion carrier (growth unit), round</td><td>PVDF or PP / FKM</td></tr>
+    <tr><td>Fume hood A — growth</td><td>vented, 90 °C · seed anneal 300 °C</td><td>Immersion carrier (growth unit), round · flat Al anneal plate &gt;⌀156</td><td>PVDF or PP / FKM</td></tr>
     <tr><td>Glovebox train — seeding</td><td>dry N₂ · amber for Ag</td><td>Seeding carrier + vapour chamber, round</td><td>PVDF (PEEK opt.) / FKM · no bare metal</td></tr>
     <tr><td>Fume hood B — plating</td><td>vented, 65–90 °C</td><td>Immersion carrier (plating unit), round</td><td>PVDF / FKM · non-catalytic fasteners</td></tr>
     <tr><td>Fume hood C — strip</td><td>vented, H₂-safe (~4× Zn load), 45 °C</td><td>Strip edge-clamp carrier, round</td><td><b>PP / EPDM / Ti + Belleville</b> · no Al, no glass, no Si</td></tr>
@@ -116,7 +118,7 @@
   <h2>6 · Consolidated purchasing</h2>
   <table>
     <tr><th>Category</th><th>Item / spec</th><th>Used at</th></tr>
-    <tr><td rowspan="4">Chemistry</td><td>Zn(NO₃)₂·6H₂O, HMTA, acetic acid (dil.), acetone, IPA</td><td>SOP-010</td></tr>
+    <tr><td rowspan="4">Chemistry</td><td>Zn(NO₃)₂·6H₂O, HMTA, acetic acid (dil.), Zn acetate dihydrate + absolute ethanol (ZnO seed layer), acetone, IPA</td><td>SOP-010</td></tr>
     <tr><td>APTES (anhydrous), AgNO₃, sodium ascorbate, ethanol</td><td>SOP-020</td></tr>
     <tr><td>NiSO₄·6H₂O, NaH₂PO₂·H₂O, citrate, glycine, lactic acid, acetate, Pb stabiliser</td><td>SOP-030</td></tr>
     <tr><td>NaOH, DI water (Type I/II), dry N₂ — bath charge sized for ~4× the old Zn load</td><td>SOP-040 / all</td></tr>
@@ -128,7 +130,7 @@
     <tr><td>FKM O-ring cord 1/16″ + splice kit; EPDM cord 1/16″ + splice kit (circular ⌀143 rings — no corner splice)</td><td>carriers</td></tr>
     <tr><td>Ti &amp; PVDF/PEEK M4 bolts/nuts + Belleville washers — <b>12 per carrier</b></td><td>carriers</td></tr>
     <tr><td>Venturi vacuum + tubing/fittings; hand tap set; deburr tools</td><td>chuck / shop</td></tr>
-    <tr><td rowspan="2">Equipment</td><td>Stir-hotplates ×3+; round/large single-use vessels (~1–1.5 L); sonicator; UV-ozone or O₂ plasma; <b>chamber vacuum sealer + gauge</b>; 150 mm wafer vacuum chuck (build per DR-006 or bought)</td><td>line</td></tr>
+    <tr><td rowspan="2">Equipment</td><td>Stir-hotplates ×3+ (one reaching 300 °C for the seed anneal); round/large single-use vessels (~1–1.5 L); sonicator; UV-ozone or O₂ plasma; <b>chamber vacuum sealer + gauge</b>; 150 mm wafer vacuum chuck (build per DR-006 or bought)</td><td>line</td></tr>
     <tr><td><b>Vacuum-decay / pressure-rise tester</b> (envelope); access to SEM/EDS, XRF; wafer-bow gauge</td><td>QC</td></tr>
   </table>
 
@@ -137,7 +139,7 @@
     <tr><th>#</th><th>Item</th><th>Where it bites</th></tr>
     <tr><td class="mono">O1</td><td>Zinc-rim stiffness: does the 13 mm rim tension the etched centre through transfer? (0.15 mm zinc should help substantially; fallback: front-side support)</td><td>SOP-040→050 handoff</td></tr>
     <tr><td class="mono">O2</td><td>Mid-P liner NaOH resistance at the chosen strip conditions, now with a ~4× zinc/zincate bath load (witness coupons)</td><td>SOP-040 §5.1</td></tr>
-    <tr><td class="mono">O3</td><td>Growth &amp; plating deposition rates — calibrate on first runs (times in the SOPs are priors)</td><td>SOP-010 / 030</td></tr>
+    <tr><td class="mono">O3</td><td>Growth &amp; plating deposition rates — calibrate on first runs (times in the SOPs are priors; the first <b>seeded</b> growth run resets the SOP-010 baseline — denser/shorter/thinner expected)</td><td>SOP-010 / 030</td></tr>
     <tr><td class="mono">O4</td><td>Common-vacuum single-point-failure: single vs double envelope, and getter margin, so a breach decays gracefully rather than collapsing</td><td>SOP-060 §2 / G7</td></tr>
     <tr><td class="mono">O5</td><td>Single final dry after the SOP-050 de-rim: baseline IPA/N₂ vs critical-point escalation (check by SEM on first parts)</td><td>SOP-050 §6.5</td></tr>
     <tr><td class="mono">O6</td><td>Getter sizing vs permeation + silicone outgassing over service life at ~1–100 Pa; and Ni/Si CTE bow within the full-face contact budget</td><td>SOP-050/060</td></tr>
@@ -145,7 +147,7 @@
     <tr><td class="mono">O8</td><td><b>CLOSED</b> — ~1–100 Pa rough–medium vacuum confirmed adequate for the intended measurement</td><td>SOP-060 §2</td></tr>
   </table>
 
-  <footer><span>ZnO-SP-001 · Rev 2.0</span><span>Consolidated shop packet · full line (silicon-wafer / common-vacuum)</span><span>CC0 1.0 &middot; Croft Swonyoung</span></footer>
+  <footer><span>ZnO-SP-001 · Rev 2.1</span><span>Consolidated shop packet · full line (silicon-wafer / common-vacuum)</span><span>CC0 1.0 &middot; Croft Swonyoung</span></footer>
 </div>
 </body>
 </html>

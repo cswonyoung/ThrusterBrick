@@ -39,7 +39,7 @@ Naming: the 150 mm step numbers with a `-300` suffix (e.g. `ZnO-SOP-010-300`).
 |------|-------------|--------|
 | `300mm-datum-reference.md` | Master datum — the locked dimensions every 300 mm doc cites | **locked** (a few `[confirm]`s) |
 | `300mm-re-derivation-plan.md` | What changes from the 150 mm datum, per document | working plan |
-| `ZnO-SOP-010-300_nanotip_growth_10mM_depletion.md` | SOP-010 ZnO nanotip growth (⌀306 blank, 4–6 L bath) | **re-derived** (Rev 1.0) |
+| `ZnO-SOP-010-300_nanotip_growth_10mM_depletion.md` | SOP-010 ZnO nanotip growth (⌀306 blank, 4–6 L bath; ZnO seed layer) | **re-derived** (Rev 1.1) |
 | `ZnO-SOP-020-300_APTES_Ag_seeding.md` | SOP-020 APTES functionalisation & Ag seeding | **re-derived** (Rev 1.0) |
 | `ZnO-SOP-030-300_electroless_NiP_plating.md` | SOP-030 electroless Ni-P plating (⌀280 active; ~8–12 L bath) | **re-derived** (Rev 1.0) |
 | `ZnO-SOP-040-300_caustic_strip_clean_dry.md` | SOP-040 caustic strip / bulk clean / dry (void-clear time unchanged) | **re-derived** (Rev 1.0) |
@@ -52,7 +52,7 @@ Naming: the 150 mm step numbers with a `-300` suffix (e.g. `ZnO-SOP-010-300`).
 | `ZnO-DR-004-300_carrier_cutfile_nesting.html` | Carrier cut-file nesting (500 × 600 bed, 1 plate/sheet) | **re-derived** (Rev 1.0) ¹ |
 | `ZnO-DR-005-300_strip_carrier_cut_set.html` | Strip carrier cut set | **re-derived** (Rev 1.0) ¹ |
 | `ZnO-DR-006-300_wafer_chuck_cut_set.html` | Wafer bonding chuck cut set (⌀300; no waterjet) | **re-derived** (Rev 1.0) ¹ |
-| `ZnO-SP-001-300_consolidated_shop_packet.html` | Consolidated shop packet (300 mm) | **re-derived** (Rev 1.0) |
+| `ZnO-SP-001-300_consolidated_shop_packet.html` | Consolidated shop packet (300 mm; ZnO seed layer at op 10) | **re-derived** (Rev 1.1) |
 | `ZnO_cut_PP_half_300.dxf` | Cut file — 1/2 in PP strip backer (⌀350 carrier; ×16 M4 on ⌀330) | **generated** ✓ |
 | `ZnO_cut_PP_threeEighth_300.dxf` | Cut file — 3/8 in PP strip clamp frame (window ⌀280) | **generated** ✓ |
 | `ZnO_cut_PVDF_quarter_300.dxf` | Cut file — 1/4 in PVDF immersion/seeding carrier (2 beds: window+handle, back/mask) | **generated** ✓ |
